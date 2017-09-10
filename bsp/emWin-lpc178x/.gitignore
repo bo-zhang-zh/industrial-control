@@ -1,0 +1,11 @@
+obj/*
+*.dbgconf
+*.uvgui.*
+JLinkLog.txt
+*.dep
+emWin/Simulation/Output/WIN32_MSVC60/Debug/*
+emWin/Simulation/ipch/*
+emWin/Simulation/*.log
+emWin/Simulation/*.sdf
+emWin/Simulation/*.filters
+emWin/Simulation/*.user

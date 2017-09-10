@@ -1,0 +1,1141 @@
+
+
+
+  <Object type="uCGUIBase.FRAMEWIN, uCGUIBase, Version=4.0.0.0, Culture=neutral, PublicKeyToken=null" name="FRAMEWIN0" children="Controls">
+    <Object type="uCGUIControlLibrary.TEXT, uCGUIControlLibrary, Version=4.0.0.0, Culture=neutral, PublicKeyToken=null" name="TEXT32" children="Controls">
+      <Property name="iID">11</Property>
+      <Property name="Size">18, 15</Property>
+      <Property name="Enable">True</Property>
+      <Property name="UserDefineID">(GUI_ID_TEXT10,GUI_ID_USER+1)</Property>
+      <Property name="TextColor">Black</Property>
+      <Property name="visible">True</Property>
+      <Property name="Text">mm</Property>
+      <Property name="TabIndex">61</Property>
+      <Property name="Name">TEXT32</Property>
+      <Property name="ForeColor">Black</Property>
+      <Property name="UserDefineFont" />
+      <Property name="Location">364, 224</Property>
+      <Property name="DataBindings">
+        <Property name="DefaultDataSourceUpdateMode">OnValidation</Property>
+      </Property>
+      <Property name="ID">NULL</Property>
+    </Object>
+    <Object type="uCGUIControlLibrary.TEXT, uCGUIControlLibrary, Version=4.0.0.0, Culture=neutral, PublicKeyToken=null" name="TEXT31" children="Controls">
+      <Property name="iID">11</Property>
+      <Property name="Size">17, 14</Property>
+      <Property name="Enable">True</Property>
+      <Property name="UserDefineID">(GUI_ID_TEXT10,GUI_ID_USER+1)</Property>
+      <Property name="TextColor">Black</Property>
+      <Property name="visible">True</Property>
+      <Property name="Text">mm</Property>
+      <Property name="TabIndex">60</Property>
+      <Property name="Name">TEXT31</Property>
+      <Property name="ForeColor">Black</Property>
+      <Property name="UserDefineFont" />
+      <Property name="Location">365, 200</Property>
+      <Property name="DataBindings">
+        <Property name="DefaultDataSourceUpdateMode">OnValidation</Property>
+      </Property>
+      <Property name="ID">NULL</Property>
+    </Object>
+    <Object type="uCGUIControlLibrary.TEXT, uCGUIControlLibrary, Version=4.0.0.0, Culture=neutral, PublicKeyToken=null" name="TEXT30" children="Controls">
+      <Property name="iID">11</Property>
+      <Property name="Size">17, 16</Property>
+      <Property name="Enable">True</Property>
+      <Property name="UserDefineID">(GUI_ID_TEXT10,GUI_ID_USER+1)</Property>
+      <Property name="TextColor">Black</Property>
+      <Property name="visible">True</Property>
+      <Property name="Text">mm</Property>
+      <Property name="TabIndex">59</Property>
+      <Property name="Name">TEXT30</Property>
+      <Property name="ForeColor">Black</Property>
+      <Property name="UserDefineFont" />
+      <Property name="Location">365, 175</Property>
+      <Property name="DataBindings">
+        <Property name="DefaultDataSourceUpdateMode">OnValidation</Property>
+      </Property>
+      <Property name="ID">NULL</Property>
+    </Object>
+    <Object type="uCGUIControlLibrary.TEXT, uCGUIControlLibrary, Version=4.0.0.0, Culture=neutral, PublicKeyToken=null" name="TEXT29" children="Controls">
+      <Property name="iID">11</Property>
+      <Property name="Size">17, 16</Property>
+      <Property name="Enable">True</Property>
+      <Property name="UserDefineID">(GUI_ID_TEXT10,GUI_ID_USER+1)</Property>
+      <Property name="TextColor">Black</Property>
+      <Property name="visible">True</Property>
+      <Property name="Text">mm</Property>
+      <Property name="TabIndex">58</Property>
+      <Property name="Name">TEXT29</Property>
+      <Property name="ForeColor">Black</Property>
+      <Property name="UserDefineFont" />
+      <Property name="Location">365, 148</Property>
+      <Property name="DataBindings">
+        <Property name="DefaultDataSourceUpdateMode">OnValidation</Property>
+      </Property>
+      <Property name="ID">NULL</Property>
+    </Object>
+    <Object type="uCGUIControlLibrary.LineH, uCGUIControlLibrary, Version=4.0.0.0, Culture=neutral, PublicKeyToken=null" name="LineH1" children="Controls">
+      <Property name="iID">0</Property>
+      <Property name="Size">220, 1</Property>
+      <Property name="DataBindings">
+        <Property name="DefaultDataSourceUpdateMode">OnValidation</Property>
+      </Property>
+      <Property name="LineWidth">1</Property>
+      <Property name="LineColor">ControlDarkDark</Property>
+      <Property name="Name">LineH1</Property>
+      <Property name="LineLength">220</Property>
+      <Property name="Location">1, 97</Property>
+      <Property name="TabIndex">57</Property>
+    </Object>
+    <Object type="uCGUIControlLibrary.LineV, uCGUIControlLibrary, Version=4.0.0.0, Culture=neutral, PublicKeyToken=null" name="LineV0" children="Controls">
+      <Property name="iID">0</Property>
+      <Property name="Size">1, 250</Property>
+      <Property name="DataBindings">
+        <Property name="DefaultDataSourceUpdateMode">OnValidation</Property>
+      </Property>
+      <Property name="LineWidth">1</Property>
+      <Property name="LineColor">ControlText</Property>
+      <Property name="Name">LineV0</Property>
+      <Property name="LineLength">250</Property>
+      <Property name="Location">219, 14</Property>
+      <Property name="TabIndex">56</Property>
+    </Object>
+    <Object type="uCGUIControlLibrary.LineH, uCGUIControlLibrary, Version=4.0.0.0, Culture=neutral, PublicKeyToken=null" name="LineH0" children="Controls">
+      <Property name="iID">0</Property>
+      <Property name="Size">180, 1</Property>
+      <Property name="DataBindings">
+        <Property name="DefaultDataSourceUpdateMode">OnValidation</Property>
+      </Property>
+      <Property name="LineWidth">1</Property>
+      <Property name="LineColor">ControlText</Property>
+      <Property name="Name">LineH0</Property>
+      <Property name="LineLength">180</Property>
+      <Property name="Location">219, 130</Property>
+      <Property name="TabIndex">55</Property>
+    </Object>
+    <Object type="uCGUIControlLibrary.DROPDOWN, uCGUIControlLibrary, Version=4.0.0.0, Culture=neutral, PublicKeyToken=null" name="DROPDOWN1" children="Controls">
+      <Property name="Items">
+        <Item type="System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">Forward</Item>
+        <Item type="System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">Backward</Item>
+      </Property>
+      <Property name="WM_NOTIFICATION_RELEASED">(False,OnDropDownReleased)</Property>
+      <Property name="DropDownHeight">80</Property>
+      <Property name="Size">89, 20</Property>
+      <Property name="UserDefineID">(GUI_ID_DROPDOWN_PATTEN_DIR,GUI_ID_USER+1)</Property>
+      <Property name="TextColor">Black</Property>
+      <Property name="Location">123, 72</Property>
+      <Property name="WM_NOTIFICATION_SCROLL_CHANGED">(False,OnDropDownScrollChanged)</Property>
+      <Property name="UserDefineFont" />
+      <Property name="ID">USER_DEFINE</Property>
+      <Property name="Text">Forward</Property>
+      <Property name="IntegralHeight">False</Property>
+      <Property name="Name">DROPDOWN1</Property>
+      <Property name="WM_NOTIFICATION_CLICKED">(False,OnDropDownClicked)</Property>
+      <Property name="WM_NOTIFICATION_MOVED_OUT">(False,OnDropDownMoveOut)</Property>
+      <Property name="visible">True</Property>
+      <Property name="WM_NOTIFICATION_SEL_CHANGED">(False,OnDropDownSelChanged)</Property>
+      <Property name="Enable">True</Property>
+      <Property name="DataBindings">
+        <Property name="DefaultDataSourceUpdateMode">OnValidation</Property>
+      </Property>
+      <Property name="ForeColor">Black</Property>
+      <Property name="iID">10</Property>
+      <Property name="FormattingEnabled">True</Property>
+      <Property name="TabIndex">54</Property>
+    </Object>
+    <Object type="uCGUIControlLibrary.BUTTON, uCGUIControlLibrary, Version=4.0.0.0, Culture=neutral, PublicKeyToken=null" name="BUTTON8" children="Controls">
+      <Property name="iID">14</Property>
+      <Property name="WM_NOTIFICATION_MOVED_OUT">(False,OnButtonMovedOut)</Property>
+      <Property name="WM_NOTIFICATION_RELEASED">(False,OnButtonReleased)</Property>
+      <Property name="Size">70, 24</Property>
+      <Property name="UserDefineID">(GUI_ID_BUTTON10,GUI_ID_USER+1)</Property>
+      <Property name="TextColor">Black</Property>
+      <Property name="Text">CLOSE</Property>
+      <Property name="WM_NOTIFICATION_CLICKED">(False,OnButtonClicked)</Property>
+      <Property name="Name">BUTTON8</Property>
+      <Property name="UseVisualStyleBackColor">True</Property>
+      <Property name="ForeColor">Black</Property>
+      <Property name="UserDefineFont" />
+      <Property name="Location">312, 285</Property>
+      <Property name="DataBindings">
+        <Property name="DefaultDataSourceUpdateMode">OnValidation</Property>
+      </Property>
+      <Property name="PressedBackColor">White</Property>
+      <Property name="ID">GUI_ID_CLOSE</Property>
+      <Property name="TabIndex">53</Property>
+    </Object>
+    <Object type="uCGUIControlLibrary.BUTTON, uCGUIControlLibrary, Version=4.0.0.0, Culture=neutral, PublicKeyToken=null" name="BUTTON7" children="Controls">
+      <Property name="iID">10</Property>
+      <Property name="WM_NOTIFICATION_MOVED_OUT">(False,OnButtonMovedOut)</Property>
+      <Property name="WM_NOTIFICATION_RELEASED">(False,OnButtonReleased)</Property>
+      <Property name="Size">83, 24</Property>
+      <Property name="UserDefineID">(GUI_ID_BUTTON10,GUI_ID_USER+1)</Property>
+      <Property name="TextColor">Black</Property>
+      <Property name="Text">OK</Property>
+      <Property name="WM_NOTIFICATION_CLICKED">(False,OnButtonClicked)</Property>
+      <Property name="Name">BUTTON7</Property>
+      <Property name="UseVisualStyleBackColor">True</Property>
+      <Property name="ForeColor">Black</Property>
+      <Property name="UserDefineFont" />
+      <Property name="Location">219, 285</Property>
+      <Property name="DataBindings">
+        <Property name="DefaultDataSourceUpdateMode">OnValidation</Property>
+      </Property>
+      <Property name="PressedBackColor">White</Property>
+      <Property name="ID">GUI_ID_OK</Property>
+      <Property name="TabIndex">52</Property>
+    </Object>
+    <Object type="uCGUIControlLibrary.DROPDOWN, uCGUIControlLibrary, Version=4.0.0.0, Culture=neutral, PublicKeyToken=null" name="DROPDOWN0" children="Controls">
+      <Property name="Items">
+        <Item type="System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">Quickly</Item>
+        <Item type="System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">Meidum</Item>
+        <Item type="System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">Slowly</Item>
+      </Property>
+      <Property name="WM_NOTIFICATION_RELEASED">(False,OnDropDownReleased)</Property>
+      <Property name="DropDownHeight">80</Property>
+      <Property name="Size">59, 20</Property>
+      <Property name="UserDefineID">(GUI_ID_DROPDOWN_MOVE_SPEED,GUI_ID_USER+1)</Property>
+      <Property name="TextColor">Black</Property>
+      <Property name="Location">323, 107</Property>
+      <Property name="WM_NOTIFICATION_SCROLL_CHANGED">(False,OnDropDownScrollChanged)</Property>
+      <Property name="UserDefineFont" />
+      <Property name="ID">USER_DEFINE</Property>
+      <Property name="Text">DROPDOWN</Property>
+      <Property name="IntegralHeight">False</Property>
+      <Property name="Name">DROPDOWN0</Property>
+      <Property name="WM_NOTIFICATION_CLICKED">(False,OnDropDownClicked)</Property>
+      <Property name="WM_NOTIFICATION_MOVED_OUT">(False,OnDropDownMoveOut)</Property>
+      <Property name="visible">True</Property>
+      <Property name="WM_NOTIFICATION_SEL_CHANGED">(False,OnDropDownSelChanged)</Property>
+      <Property name="Enable">True</Property>
+      <Property name="DataBindings">
+        <Property name="DefaultDataSourceUpdateMode">OnValidation</Property>
+      </Property>
+      <Property name="ForeColor">Black</Property>
+      <Property name="iID">10</Property>
+      <Property name="FormattingEnabled">True</Property>
+      <Property name="TabIndex">51</Property>
+    </Object>
+    <Object type="uCGUIControlLibrary.TEXT, uCGUIControlLibrary, Version=4.0.0.0, Culture=neutral, PublicKeyToken=null" name="TEXT28" children="Controls">
+      <Property name="iID">11</Property>
+      <Property name="Size">72, 15</Property>
+      <Property name="Enable">True</Property>
+      <Property name="UserDefineID">(GUI_ID_TEXT10,GUI_ID_USER+1)</Property>
+      <Property name="TextColor">Black</Property>
+      <Property name="visible">True</Property>
+      <Property name="Text">Move Speed:</Property>
+      <Property name="TabIndex">50</Property>
+      <Property name="Name">TEXT28</Property>
+      <Property name="ForeColor">Black</Property>
+      <Property name="UserDefineFont" />
+      <Property name="Location">248, 107</Property>
+      <Property name="DataBindings">
+        <Property name="DefaultDataSourceUpdateMode">OnValidation</Property>
+      </Property>
+      <Property name="ID">NULL</Property>
+    </Object>
+    <Object type="uCGUIControlLibrary.BUTTON, uCGUIControlLibrary, Version=4.0.0.0, Culture=neutral, PublicKeyToken=null" name="BUTTON6" children="Controls">
+      <Property name="iID">18</Property>
+      <Property name="WM_NOTIFICATION_MOVED_OUT">(False,OnButtonMovedOut)</Property>
+      <Property name="WM_NOTIFICATION_RELEASED">(True,OnBtnManMoveDownReleased)</Property>
+      <Property name="Size">60, 27</Property>
+      <Property name="UserDefineID">(GUI_ID_BTN_MAN_MOVE_D,GUI_ID_USER+1)</Property>
+      <Property name="TextColor">Black</Property>
+      <Property name="Text">Down ↓</Property>
+      <Property name="WM_NOTIFICATION_CLICKED">(True,OnBtnManMoveDownClicked)</Property>
+      <Property name="Name">BUTTON6</Property>
+      <Property name="UseVisualStyleBackColor">True</Property>
+      <Property name="ForeColor">Black</Property>
+      <Property name="UserDefineFont" />
+      <Property name="Location">322, 75</Property>
+      <Property name="DataBindings">
+        <Property name="DefaultDataSourceUpdateMode">OnValidation</Property>
+      </Property>
+      <Property name="PressedBackColor">White</Property>
+      <Property name="ID">USER_DEFINE</Property>
+      <Property name="TabIndex">49</Property>
+    </Object>
+    <Object type="uCGUIControlLibrary.BUTTON, uCGUIControlLibrary, Version=4.0.0.0, Culture=neutral, PublicKeyToken=null" name="BUTTON5" children="Controls">
+      <Property name="iID">18</Property>
+      <Property name="WM_NOTIFICATION_MOVED_OUT">(False,OnButtonMovedOut)</Property>
+      <Property name="WM_NOTIFICATION_RELEASED">(True,OnBtnManMoveUpReleased)</Property>
+      <Property name="Size">60, 27</Property>
+      <Property name="UserDefineID">(GUI_ID_BTN_MAN_MOVE_U,GUI_ID_USER+1)</Property>
+      <Property name="TextColor">Black</Property>
+      <Property name="Text">Up ↑</Property>
+      <Property name="WM_NOTIFICATION_CLICKED">(True,OnBtnManMoveUpClicked)</Property>
+      <Property name="Name">BUTTON5</Property>
+      <Property name="UseVisualStyleBackColor">True</Property>
+      <Property name="ForeColor">Black</Property>
+      <Property name="UserDefineFont" />
+      <Property name="Location">248, 75</Property>
+      <Property name="DataBindings">
+        <Property name="DefaultDataSourceUpdateMode">OnValidation</Property>
+      </Property>
+      <Property name="PressedBackColor">White</Property>
+      <Property name="ID">USER_DEFINE</Property>
+      <Property name="TabIndex">48</Property>
+    </Object>
+    <Object type="uCGUIControlLibrary.BUTTON, uCGUIControlLibrary, Version=4.0.0.0, Culture=neutral, PublicKeyToken=null" name="BUTTON4" children="Controls">
+      <Property name="iID">18</Property>
+      <Property name="WM_NOTIFICATION_MOVED_OUT">(False,OnButtonMovedOut)</Property>
+      <Property name="WM_NOTIFICATION_RELEASED">(True,OnBtnManMoveRightReleased)</Property>
+      <Property name="Size">60, 27</Property>
+      <Property name="UserDefineID">(GUI_ID_BTN_MAN_MOVE_R,GUI_ID_USER+1)</Property>
+      <Property name="TextColor">Black</Property>
+      <Property name="Text">Right -&gt;</Property>
+      <Property name="WM_NOTIFICATION_CLICKED">(True,OnBtnManMoveRightClicked)</Property>
+      <Property name="Name">BUTTON4</Property>
+      <Property name="UseVisualStyleBackColor">True</Property>
+      <Property name="ForeColor">Black</Property>
+      <Property name="UserDefineFont" />
+      <Property name="Location">322, 37</Property>
+      <Property name="DataBindings">
+        <Property name="DefaultDataSourceUpdateMode">OnValidation</Property>
+      </Property>
+      <Property name="PressedBackColor">White</Property>
+      <Property name="ID">USER_DEFINE</Property>
+      <Property name="TabIndex">47</Property>
+    </Object>
+    <Object type="uCGUIControlLibrary.BUTTON, uCGUIControlLibrary, Version=4.0.0.0, Culture=neutral, PublicKeyToken=null" name="BUTTON3" children="Controls">
+      <Property name="iID">18</Property>
+      <Property name="WM_NOTIFICATION_MOVED_OUT">(False,OnButtonMovedOut)</Property>
+      <Property name="WM_NOTIFICATION_RELEASED">(True,OnBtnManMoveLeftReleased)</Property>
+      <Property name="Size">60, 27</Property>
+      <Property name="UserDefineID">(GUI_ID_BTN_MAN_MOVE_L,GUI_ID_USER+1)</Property>
+      <Property name="TextColor">Black</Property>
+      <Property name="Text">Left &lt;-</Property>
+      <Property name="WM_NOTIFICATION_CLICKED">(True,OnBtnManMoveLeftClicked)</Property>
+      <Property name="Name">BUTTON3</Property>
+      <Property name="UseVisualStyleBackColor">True</Property>
+      <Property name="ForeColor">Black</Property>
+      <Property name="UserDefineFont" />
+      <Property name="Location">248, 37</Property>
+      <Property name="DataBindings">
+        <Property name="DefaultDataSourceUpdateMode">OnValidation</Property>
+      </Property>
+      <Property name="PressedBackColor">White</Property>
+      <Property name="ID">USER_DEFINE</Property>
+      <Property name="TabIndex">46</Property>
+    </Object>
+    <Object type="uCGUIControlLibrary.TEXT, uCGUIControlLibrary, Version=4.0.0.0, Culture=neutral, PublicKeyToken=null" name="TEXT27" children="Controls">
+      <Property name="iID">11</Property>
+      <Property name="Size">103, 15</Property>
+      <Property name="Enable">True</Property>
+      <Property name="UserDefineID">(GUI_ID_TEXT10,GUI_ID_USER+1)</Property>
+      <Property name="TextColor">Black</Property>
+      <Property name="visible">True</Property>
+      <Property name="Text">Manual Moving</Property>
+      <Property name="TabIndex">45</Property>
+      <Property name="Name">TEXT27</Property>
+      <Property name="ForeColor">Black</Property>
+      <Property name="UserDefineFont" />
+      <Property name="Location">226, 19</Property>
+      <Property name="DataBindings">
+        <Property name="DefaultDataSourceUpdateMode">OnValidation</Property>
+      </Property>
+      <Property name="ID">NULL</Property>
+    </Object>
+    <Object type="uCGUIControlLibrary.TEXT, uCGUIControlLibrary, Version=4.0.0.0, Culture=neutral, PublicKeyToken=null" name="TEXT26" children="Controls">
+      <Property name="iID">10</Property>
+      <Property name="Size">94, 13</Property>
+      <Property name="Enable">True</Property>
+      <Property name="UserDefineID">(GUI_ID_TEXT_PATTEN_SCALE,GUI_ID_USER+1)</Property>
+      <Property name="TextColor">Black</Property>
+      <Property name="visible">True</Property>
+      <Property name="Text">X:0.50 Y:0.50</Property>
+      <Property name="TabIndex">44</Property>
+      <Property name="Name">TEXT26</Property>
+      <Property name="ForeColor">Black</Property>
+      <Property name="UserDefineFont" />
+      <Property name="Location">281, 258</Property>
+      <Property name="DataBindings">
+        <Property name="DefaultDataSourceUpdateMode">OnValidation</Property>
+      </Property>
+      <Property name="ID">USER_DEFINE</Property>
+    </Object>
+    <Object type="uCGUIControlLibrary.TEXT, uCGUIControlLibrary, Version=4.0.0.0, Culture=neutral, PublicKeyToken=null" name="TEXT25" children="Controls">
+      <Property name="iID">11</Property>
+      <Property name="Size">43, 12</Property>
+      <Property name="Enable">True</Property>
+      <Property name="UserDefineID">(GUI_ID_TEXT10,GUI_ID_USER+1)</Property>
+      <Property name="TextColor">Black</Property>
+      <Property name="visible">True</Property>
+      <Property name="Text">Scale:</Property>
+      <Property name="TabIndex">43</Property>
+      <Property name="Name">TEXT25</Property>
+      <Property name="ForeColor">Black</Property>
+      <Property name="UserDefineFont" />
+      <Property name="Location">234, 258</Property>
+      <Property name="DataBindings">
+        <Property name="DefaultDataSourceUpdateMode">OnValidation</Property>
+      </Property>
+      <Property name="ID">NULL</Property>
+    </Object>
+    <Object type="uCGUIControlLibrary.TEXT, uCGUIControlLibrary, Version=4.0.0.0, Culture=neutral, PublicKeyToken=null" name="TEXT22" children="Controls">
+      <Property name="iID">10</Property>
+      <Property name="Size">90, 15</Property>
+      <Property name="Enable">True</Property>
+      <Property name="UserDefineID">(GUI_ID_TEXT_PATTEN_SIZE,GUI_ID_USER+1)</Property>
+      <Property name="TextColor">Black</Property>
+      <Property name="visible">True</Property>
+      <Property name="Text">X:1000 Y:1500</Property>
+      <Property name="TabIndex">40</Property>
+      <Property name="Name">TEXT22</Property>
+      <Property name="ForeColor">Black</Property>
+      <Property name="UserDefineFont" />
+      <Property name="Location">281, 241</Property>
+      <Property name="DataBindings">
+        <Property name="DefaultDataSourceUpdateMode">OnValidation</Property>
+      </Property>
+      <Property name="ID">USER_DEFINE</Property>
+    </Object>
+    <Object type="uCGUIControlLibrary.TEXT, uCGUIControlLibrary, Version=4.0.0.0, Culture=neutral, PublicKeyToken=null" name="TEXT21" children="Controls">
+      <Property name="iID">11</Property>
+      <Property name="Size">41, 17</Property>
+      <Property name="Enable">True</Property>
+      <Property name="UserDefineID">(GUI_ID_TEXT10,GUI_ID_USER+1)</Property>
+      <Property name="TextColor">Black</Property>
+      <Property name="visible">True</Property>
+      <Property name="Text">Size:</Property>
+      <Property name="TabIndex">39</Property>
+      <Property name="Name">TEXT21</Property>
+      <Property name="ForeColor">Black</Property>
+      <Property name="UserDefineFont" />
+      <Property name="Location">234, 241</Property>
+      <Property name="DataBindings">
+        <Property name="DefaultDataSourceUpdateMode">OnValidation</Property>
+      </Property>
+      <Property name="ID">NULL</Property>
+    </Object>
+    <Object type="uCGUIControlLibrary.BUTTON, uCGUIControlLibrary, Version=4.0.0.0, Culture=neutral, PublicKeyToken=null" name="BUTTON2" children="Controls">
+      <Property name="iID">18</Property>
+      <Property name="WM_NOTIFICATION_MOVED_OUT">(False,OnButtonMovedOut)</Property>
+      <Property name="WM_NOTIFICATION_RELEASED">(False,OnButtonReleased)</Property>
+      <Property name="Size">75, 38</Property>
+      <Property name="UserDefineID">(GUI_ID_BTN_GO_ORG,GUI_ID_USER+1)</Property>
+      <Property name="TextColor">Black</Property>
+      <Property name="Text">HOME</Property>
+      <Property name="WM_NOTIFICATION_CLICKED">(False,OnButtonClicked)</Property>
+      <Property name="Name">BUTTON2</Property>
+      <Property name="UseVisualStyleBackColor">True</Property>
+      <Property name="ForeColor">Black</Property>
+      <Property name="UserDefineFont" />
+      <Property name="Location">32, 270</Property>
+      <Property name="DataBindings">
+        <Property name="DefaultDataSourceUpdateMode">OnValidation</Property>
+      </Property>
+      <Property name="PressedBackColor">White</Property>
+      <Property name="ID">USER_DEFINE</Property>
+      <Property name="TabIndex">38</Property>
+    </Object>
+    <Object type="uCGUIControlLibrary.EDIT, uCGUIControlLibrary, Version=4.0.0.0, Culture=neutral, PublicKeyToken=null" name="EDIT13" children="Controls">
+      <Property name="Name">EDIT13</Property>
+      <Property name="UserDefineFont" />
+      <Property name="MaxValue">255</Property>
+      <Property name="WM_NOTIFICATION_MOVED_OUT">(False,OnEditMovedOut)</Property>
+      <Property name="MinValue">0</Property>
+      <Property name="TextColor">Black</Property>
+      <Property name="DataBindings">
+        <Property name="DefaultDataSourceUpdateMode">OnValidation</Property>
+      </Property>
+      <Property name="WM_NOTIFICATION_RELEASED">(False,OnEditReleased)</Property>
+      <Property name="ForeColor">Black</Property>
+      <Property name="Location">312, 219</Property>
+      <Property name="WM_NOTIFICATION_CLICKED">(False,OnEditClicked)</Property>
+      <Property name="ID">USER_DEFINE</Property>
+      <Property name="Enable">True</Property>
+      <Property name="visible">True</Property>
+      <Property name="WM_NOTIFICATION_VALUE_CHANGED">(False,OnEditValueChanged)</Property>
+      <Property name="Size">50, 20</Property>
+      <Property name="iID">10</Property>
+      <Property name="TabIndex">37</Property>
+      <Property name="UserDefineID">(GUI_ID_EDIT_DOWN_SPACE,GUI_ID_USER+1)</Property>
+      <Property name="EditMode">TextMode</Property>
+    </Object>
+    <Object type="uCGUIControlLibrary.TEXT, uCGUIControlLibrary, Version=4.0.0.0, Culture=neutral, PublicKeyToken=null" name="TEXT20" children="Controls">
+      <Property name="iID">11</Property>
+      <Property name="Size">72, 13</Property>
+      <Property name="Enable">True</Property>
+      <Property name="UserDefineID">(GUI_ID_TEXT10,GUI_ID_USER+1)</Property>
+      <Property name="TextColor">Black</Property>
+      <Property name="visible">True</Property>
+      <Property name="Text">Down Space:</Property>
+      <Property name="TabIndex">36</Property>
+      <Property name="Name">TEXT20</Property>
+      <Property name="ForeColor">Black</Property>
+      <Property name="UserDefineFont" />
+      <Property name="Location">234, 222</Property>
+      <Property name="DataBindings">
+        <Property name="DefaultDataSourceUpdateMode">OnValidation</Property>
+      </Property>
+      <Property name="ID">NULL</Property>
+    </Object>
+    <Object type="uCGUIControlLibrary.EDIT, uCGUIControlLibrary, Version=4.0.0.0, Culture=neutral, PublicKeyToken=null" name="EDIT12" children="Controls">
+      <Property name="Name">EDIT12</Property>
+      <Property name="UserDefineFont" />
+      <Property name="MaxValue">255</Property>
+      <Property name="WM_NOTIFICATION_MOVED_OUT">(False,OnxxxMovedOut)</Property>
+      <Property name="MinValue">0</Property>
+      <Property name="TextColor">Black</Property>
+      <Property name="DataBindings">
+        <Property name="DefaultDataSourceUpdateMode">OnValidation</Property>
+      </Property>
+      <Property name="WM_NOTIFICATION_RELEASED">(False,OnxxxRelease)</Property>
+      <Property name="ForeColor">Black</Property>
+      <Property name="Location">312, 194</Property>
+      <Property name="WM_NOTIFICATION_CLICKED">(False,OnxxxClicked)</Property>
+      <Property name="ID">USER_DEFINE</Property>
+      <Property name="Enable">True</Property>
+      <Property name="visible">True</Property>
+      <Property name="WM_NOTIFICATION_VALUE_CHANGED">(False,OnxxxValueChanged)</Property>
+      <Property name="Size">50, 20</Property>
+      <Property name="iID">10</Property>
+      <Property name="TabIndex">35</Property>
+      <Property name="UserDefineID">(GUI_ID_EDIT_UP_SPACE,GUI_ID_USER+1)</Property>
+      <Property name="EditMode">TextMode</Property>
+    </Object>
+    <Object type="uCGUIControlLibrary.TEXT, uCGUIControlLibrary, Version=4.0.0.0, Culture=neutral, PublicKeyToken=null" name="TEXT19" children="Controls">
+      <Property name="iID">11</Property>
+      <Property name="Size">60, 13</Property>
+      <Property name="Enable">True</Property>
+      <Property name="UserDefineID">(GUI_ID_TEXT10,GUI_ID_USER+1)</Property>
+      <Property name="TextColor">Black</Property>
+      <Property name="visible">True</Property>
+      <Property name="Text">Up Space:</Property>
+      <Property name="TabIndex">34</Property>
+      <Property name="Name">TEXT19</Property>
+      <Property name="ForeColor">Black</Property>
+      <Property name="UserDefineFont" />
+      <Property name="Location">234, 197</Property>
+      <Property name="DataBindings">
+        <Property name="DefaultDataSourceUpdateMode">OnValidation</Property>
+      </Property>
+      <Property name="ID">NULL</Property>
+    </Object>
+    <Object type="uCGUIControlLibrary.EDIT, uCGUIControlLibrary, Version=4.0.0.0, Culture=neutral, PublicKeyToken=null" name="EDIT11" children="Controls">
+      <Property name="Name">EDIT11</Property>
+      <Property name="UserDefineFont" />
+      <Property name="MaxValue">255</Property>
+      <Property name="WM_NOTIFICATION_MOVED_OUT">(False,OnEditMovedOut)</Property>
+      <Property name="MinValue">0</Property>
+      <Property name="TextColor">Black</Property>
+      <Property name="DataBindings">
+        <Property name="DefaultDataSourceUpdateMode">OnValidation</Property>
+      </Property>
+      <Property name="WM_NOTIFICATION_RELEASED">(False,OnEditReleased)</Property>
+      <Property name="ForeColor">Black</Property>
+      <Property name="Location">312, 169</Property>
+      <Property name="WM_NOTIFICATION_CLICKED">(False,OnEditClicked)</Property>
+      <Property name="ID">USER_DEFINE</Property>
+      <Property name="Enable">True</Property>
+      <Property name="visible">True</Property>
+      <Property name="WM_NOTIFICATION_VALUE_CHANGED">(False,OnEditValueChanged)</Property>
+      <Property name="Size">50, 20</Property>
+      <Property name="iID">10</Property>
+      <Property name="TabIndex">33</Property>
+      <Property name="UserDefineID">(GUI_ID_EDIT_RIGHT_SPACE,GUI_ID_USER+1)</Property>
+      <Property name="EditMode">TextMode</Property>
+    </Object>
+    <Object type="uCGUIControlLibrary.TEXT, uCGUIControlLibrary, Version=4.0.0.0, Culture=neutral, PublicKeyToken=null" name="TEXT18" children="Controls">
+      <Property name="iID">11</Property>
+      <Property name="Size">78, 13</Property>
+      <Property name="Enable">True</Property>
+      <Property name="UserDefineID">(GUI_ID_TEXT10,GUI_ID_USER+1)</Property>
+      <Property name="TextColor">Black</Property>
+      <Property name="visible">True</Property>
+      <Property name="Text">Right Space:</Property>
+      <Property name="TabIndex">32</Property>
+      <Property name="Name">TEXT18</Property>
+      <Property name="ForeColor">Black</Property>
+      <Property name="UserDefineFont" />
+      <Property name="Location">234, 172</Property>
+      <Property name="DataBindings">
+        <Property name="DefaultDataSourceUpdateMode">OnValidation</Property>
+      </Property>
+      <Property name="ID">NULL</Property>
+    </Object>
+    <Object type="uCGUIControlLibrary.EDIT, uCGUIControlLibrary, Version=4.0.0.0, Culture=neutral, PublicKeyToken=null" name="EDIT10" children="Controls">
+      <Property name="Name">EDIT10</Property>
+      <Property name="UserDefineFont" />
+      <Property name="MaxValue">255</Property>
+      <Property name="WM_NOTIFICATION_MOVED_OUT">(False,OnEditMovedOut)</Property>
+      <Property name="MinValue">0</Property>
+      <Property name="TextColor">Black</Property>
+      <Property name="DataBindings">
+        <Property name="DefaultDataSourceUpdateMode">OnValidation</Property>
+      </Property>
+      <Property name="WM_NOTIFICATION_RELEASED">(False,OnEditReleased)</Property>
+      <Property name="ForeColor">Black</Property>
+      <Property name="Location">312, 144</Property>
+      <Property name="WM_NOTIFICATION_CLICKED">(False,OnEditClicked)</Property>
+      <Property name="ID">USER_DEFINE</Property>
+      <Property name="Enable">True</Property>
+      <Property name="visible">True</Property>
+      <Property name="WM_NOTIFICATION_VALUE_CHANGED">(False,OnEditValueChanged)</Property>
+      <Property name="Size">50, 20</Property>
+      <Property name="iID">10</Property>
+      <Property name="TabIndex">31</Property>
+      <Property name="UserDefineID">(GUI_ID_EDIT_LEFT_SPACE,GUI_ID_USER+1)</Property>
+      <Property name="EditMode">TextMode</Property>
+    </Object>
+    <Object type="uCGUIControlLibrary.TEXT, uCGUIControlLibrary, Version=4.0.0.0, Culture=neutral, PublicKeyToken=null" name="TEXT17" children="Controls">
+      <Property name="iID">11</Property>
+      <Property name="Size">72, 13</Property>
+      <Property name="Enable">True</Property>
+      <Property name="UserDefineID">(GUI_ID_TEXT10,GUI_ID_USER+1)</Property>
+      <Property name="TextColor">Black</Property>
+      <Property name="visible">True</Property>
+      <Property name="Text">Left Space:</Property>
+      <Property name="TabIndex">30</Property>
+      <Property name="Name">TEXT17</Property>
+      <Property name="ForeColor">Black</Property>
+      <Property name="UserDefineFont" />
+      <Property name="Location">234, 147</Property>
+      <Property name="DataBindings">
+        <Property name="DefaultDataSourceUpdateMode">OnValidation</Property>
+      </Property>
+      <Property name="ID">NULL</Property>
+    </Object>
+    <Object type="uCGUIControlLibrary.TEXT, uCGUIControlLibrary, Version=4.0.0.0, Culture=neutral, PublicKeyToken=null" name="TEXT16" children="Controls">
+      <Property name="iID">11</Property>
+      <Property name="Size">115, 16</Property>
+      <Property name="Enable">True</Property>
+      <Property name="UserDefineID">(GUI_ID_TEXT10,GUI_ID_USER+1)</Property>
+      <Property name="TextColor">Black</Property>
+      <Property name="visible">True</Property>
+      <Property name="Text">Space of Patten</Property>
+      <Property name="TabIndex">29</Property>
+      <Property name="Name">TEXT16</Property>
+      <Property name="ForeColor">Black</Property>
+      <Property name="UserDefineFont" />
+      <Property name="Location">219, 132</Property>
+      <Property name="DataBindings">
+        <Property name="DefaultDataSourceUpdateMode">OnValidation</Property>
+      </Property>
+      <Property name="ID">NULL</Property>
+    </Object>
+    <Object type="uCGUIControlLibrary.BUTTON, uCGUIControlLibrary, Version=4.0.0.0, Culture=neutral, PublicKeyToken=null" name="BUTTON1" children="Controls">
+      <Property name="iID">18</Property>
+      <Property name="WM_NOTIFICATION_MOVED_OUT">(False,OnButtonMovedOut)</Property>
+      <Property name="WM_NOTIFICATION_RELEASED">(False,OnButtonReleased)</Property>
+      <Property name="Size">55, 38</Property>
+      <Property name="UserDefineID">(GUI_ID_BTN_MOVE_LEFT,GUI_ID_USER+1)</Property>
+      <Property name="TextColor">Black</Property>
+      <Property name="Text">MOVE &lt;&lt;</Property>
+      <Property name="WM_NOTIFICATION_CLICKED">(False,OnButtonClicked)</Property>
+      <Property name="Name">BUTTON1</Property>
+      <Property name="UseVisualStyleBackColor">True</Property>
+      <Property name="ForeColor">Black</Property>
+      <Property name="UserDefineFont" />
+      <Property name="Location">157, 191</Property>
+      <Property name="DataBindings">
+        <Property name="DefaultDataSourceUpdateMode">OnValidation</Property>
+      </Property>
+      <Property name="PressedBackColor">White</Property>
+      <Property name="ID">USER_DEFINE</Property>
+      <Property name="TabIndex">28</Property>
+    </Object>
+    <Object type="uCGUIControlLibrary.BUTTON, uCGUIControlLibrary, Version=4.0.0.0, Culture=neutral, PublicKeyToken=null" name="BUTTON0" children="Controls">
+      <Property name="iID">18</Property>
+      <Property name="WM_NOTIFICATION_MOVED_OUT">(False,OnButtonMovedOut)</Property>
+      <Property name="WM_NOTIFICATION_RELEASED">(False,OnButtonReleased)</Property>
+      <Property name="Size">56, 38</Property>
+      <Property name="UserDefineID">(GUI_ID_BTN_MOVE_RIGHT,GUI_ID_USER+1)</Property>
+      <Property name="TextColor">Black</Property>
+      <Property name="Text">MOVE &gt;&gt;</Property>
+      <Property name="WM_NOTIFICATION_CLICKED">(False,OnButtonClicked)</Property>
+      <Property name="Name">BUTTON0</Property>
+      <Property name="UseVisualStyleBackColor">True</Property>
+      <Property name="ForeColor">Black</Property>
+      <Property name="UserDefineFont" />
+      <Property name="Location">157, 147</Property>
+      <Property name="DataBindings">
+        <Property name="DefaultDataSourceUpdateMode">OnValidation</Property>
+      </Property>
+      <Property name="PressedBackColor">White</Property>
+      <Property name="ID">USER_DEFINE</Property>
+      <Property name="TabIndex">27</Property>
+    </Object>
+    <Object type="uCGUIControlLibrary.EDIT, uCGUIControlLibrary, Version=4.0.0.0, Culture=neutral, PublicKeyToken=null" name="EDIT9" children="Controls">
+      <Property name="Name">EDIT9</Property>
+      <Property name="UserDefineFont" />
+      <Property name="MaxValue">255</Property>
+      <Property name="WM_NOTIFICATION_MOVED_OUT">(False,OnEditMovedOut)</Property>
+      <Property name="MinValue">0</Property>
+      <Property name="TextColor">Black</Property>
+      <Property name="DataBindings">
+        <Property name="DefaultDataSourceUpdateMode">OnValidation</Property>
+      </Property>
+      <Property name="WM_NOTIFICATION_RELEASED">(False,OnEditReleased)</Property>
+      <Property name="ForeColor">Black</Property>
+      <Property name="Location">92, 244</Property>
+      <Property name="WM_NOTIFICATION_CLICKED">(False,OnEditClicked)</Property>
+      <Property name="ID">USER_DEFINE</Property>
+      <Property name="Enable">True</Property>
+      <Property name="visible">True</Property>
+      <Property name="WM_NOTIFICATION_VALUE_CHANGED">(False,OnEditValueChanged)</Property>
+      <Property name="Size">59, 20</Property>
+      <Property name="iID">10</Property>
+      <Property name="TabIndex">26</Property>
+      <Property name="UserDefineID">(GUI_ID_EDIT_OPY,GUI_ID_USER+1)</Property>
+      <Property name="EditMode">TextMode</Property>
+    </Object>
+    <Object type="uCGUIControlLibrary.TEXT, uCGUIControlLibrary, Version=4.0.0.0, Culture=neutral, PublicKeyToken=null" name="TEXT15" children="Controls">
+      <Property name="iID">11</Property>
+      <Property name="Size">21, 17</Property>
+      <Property name="Enable">True</Property>
+      <Property name="UserDefineID">(GUI_ID_TEXT10,GUI_ID_USER+1)</Property>
+      <Property name="TextColor">Black</Property>
+      <Property name="visible">True</Property>
+      <Property name="Text">Y:</Property>
+      <Property name="TabIndex">25</Property>
+      <Property name="Name">TEXT15</Property>
+      <Property name="ForeColor">Black</Property>
+      <Property name="UserDefineFont" />
+      <Property name="Location">70, 249</Property>
+      <Property name="DataBindings">
+        <Property name="DefaultDataSourceUpdateMode">OnValidation</Property>
+      </Property>
+      <Property name="ID">NULL</Property>
+    </Object>
+    <Object type="uCGUIControlLibrary.EDIT, uCGUIControlLibrary, Version=4.0.0.0, Culture=neutral, PublicKeyToken=null" name="EDIT8" children="Controls">
+      <Property name="Name">EDIT8</Property>
+      <Property name="UserDefineFont" />
+      <Property name="MaxValue">255</Property>
+      <Property name="WM_NOTIFICATION_MOVED_OUT">(False,OnEditMovedOut)</Property>
+      <Property name="MinValue">0</Property>
+      <Property name="TextColor">Black</Property>
+      <Property name="DataBindings">
+        <Property name="DefaultDataSourceUpdateMode">OnValidation</Property>
+      </Property>
+      <Property name="WM_NOTIFICATION_RELEASED">(False,OnEditReleased)</Property>
+      <Property name="ForeColor">Black</Property>
+      <Property name="Location">92, 219</Property>
+      <Property name="WM_NOTIFICATION_CLICKED">(False,OnEditClicked)</Property>
+      <Property name="ID">USER_DEFINE</Property>
+      <Property name="Enable">True</Property>
+      <Property name="visible">True</Property>
+      <Property name="WM_NOTIFICATION_VALUE_CHANGED">(False,OnEditValueChanged)</Property>
+      <Property name="Size">59, 20</Property>
+      <Property name="iID">10</Property>
+      <Property name="TabIndex">24</Property>
+      <Property name="UserDefineID">(GUI_ID_EDIT_OPX,GUI_ID_USER+1)</Property>
+      <Property name="EditMode">TextMode</Property>
+    </Object>
+    <Object type="uCGUIControlLibrary.TEXT, uCGUIControlLibrary, Version=4.0.0.0, Culture=neutral, PublicKeyToken=null" name="TEXT14" children="Controls">
+      <Property name="iID">11</Property>
+      <Property name="Size">77, 17</Property>
+      <Property name="Enable">True</Property>
+      <Property name="UserDefineID">(GUI_ID_TEXT10,GUI_ID_USER+1)</Property>
+      <Property name="TextColor">Black</Property>
+      <Property name="visible">True</Property>
+      <Property name="Text">Outpoint: X:</Property>
+      <Property name="TabIndex">23</Property>
+      <Property name="Name">TEXT14</Property>
+      <Property name="ForeColor">Black</Property>
+      <Property name="UserDefineFont" />
+      <Property name="Location">9, 222</Property>
+      <Property name="DataBindings">
+        <Property name="DefaultDataSourceUpdateMode">OnValidation</Property>
+      </Property>
+      <Property name="ID">NULL</Property>
+    </Object>
+    <Object type="uCGUIControlLibrary.EDIT, uCGUIControlLibrary, Version=4.0.0.0, Culture=neutral, PublicKeyToken=null" name="EDIT7" children="Controls">
+      <Property name="Name">EDIT7</Property>
+      <Property name="UserDefineFont" />
+      <Property name="MaxValue">255</Property>
+      <Property name="WM_NOTIFICATION_MOVED_OUT">(False,OnEditMovedOut)</Property>
+      <Property name="MinValue">0</Property>
+      <Property name="TextColor">Black</Property>
+      <Property name="DataBindings">
+        <Property name="DefaultDataSourceUpdateMode">OnValidation</Property>
+      </Property>
+      <Property name="WM_NOTIFICATION_RELEASED">(False,OnEditReleased)</Property>
+      <Property name="ForeColor">Black</Property>
+      <Property name="Location">92, 194</Property>
+      <Property name="WM_NOTIFICATION_CLICKED">(False,OnEditClicked)</Property>
+      <Property name="ID">USER_DEFINE</Property>
+      <Property name="Enable">True</Property>
+      <Property name="visible">True</Property>
+      <Property name="WM_NOTIFICATION_VALUE_CHANGED">(False,OnEditValueChanged)</Property>
+      <Property name="Size">59, 20</Property>
+      <Property name="iID">10</Property>
+      <Property name="TabIndex">22</Property>
+      <Property name="UserDefineID">(GUI_ID_EDIT_DOWN_LIMIT,GUI_ID_USER+1)</Property>
+      <Property name="EditMode">TextMode</Property>
+    </Object>
+    <Object type="uCGUIControlLibrary.TEXT, uCGUIControlLibrary, Version=4.0.0.0, Culture=neutral, PublicKeyToken=null" name="TEXT13" children="Controls">
+      <Property name="iID">11</Property>
+      <Property name="Size">75, 17</Property>
+      <Property name="Enable">True</Property>
+      <Property name="UserDefineID">(GUI_ID_TEXT10,GUI_ID_USER+1)</Property>
+      <Property name="TextColor">Black</Property>
+      <Property name="visible">True</Property>
+      <Property name="Text">Down Limit:</Property>
+      <Property name="TabIndex">21</Property>
+      <Property name="Name">TEXT13</Property>
+      <Property name="ForeColor">Black</Property>
+      <Property name="UserDefineFont" />
+      <Property name="Location">9, 197</Property>
+      <Property name="DataBindings">
+        <Property name="DefaultDataSourceUpdateMode">OnValidation</Property>
+      </Property>
+      <Property name="ID">NULL</Property>
+    </Object>
+    <Object type="uCGUIControlLibrary.EDIT, uCGUIControlLibrary, Version=4.0.0.0, Culture=neutral, PublicKeyToken=null" name="EDIT6" children="Controls">
+      <Property name="Name">EDIT6</Property>
+      <Property name="UserDefineFont" />
+      <Property name="MaxValue">255</Property>
+      <Property name="WM_NOTIFICATION_MOVED_OUT">(False,OnEditMovedOut)</Property>
+      <Property name="MinValue">0</Property>
+      <Property name="TextColor">Black</Property>
+      <Property name="DataBindings">
+        <Property name="DefaultDataSourceUpdateMode">OnValidation</Property>
+      </Property>
+      <Property name="WM_NOTIFICATION_RELEASED">(False,OnEditReleased)</Property>
+      <Property name="ForeColor">Black</Property>
+      <Property name="Location">92, 169</Property>
+      <Property name="WM_NOTIFICATION_CLICKED">(False,OnEditClicked)</Property>
+      <Property name="ID">USER_DEFINE</Property>
+      <Property name="Enable">True</Property>
+      <Property name="visible">True</Property>
+      <Property name="WM_NOTIFICATION_VALUE_CHANGED">(False,OnEditValueChanged)</Property>
+      <Property name="Size">59, 20</Property>
+      <Property name="iID">10</Property>
+      <Property name="TabIndex">20</Property>
+      <Property name="UserDefineID">(GUI_ID_EDIT_UP_LIMIT,GUI_ID_USER+1)</Property>
+      <Property name="EditMode">TextMode</Property>
+    </Object>
+    <Object type="uCGUIControlLibrary.TEXT, uCGUIControlLibrary, Version=4.0.0.0, Culture=neutral, PublicKeyToken=null" name="TEXT12" children="Controls">
+      <Property name="iID">11</Property>
+      <Property name="Size">60, 17</Property>
+      <Property name="Enable">True</Property>
+      <Property name="UserDefineID">(GUI_ID_TEXT10,GUI_ID_USER+1)</Property>
+      <Property name="TextColor">Black</Property>
+      <Property name="visible">True</Property>
+      <Property name="Text">Up Limit:</Property>
+      <Property name="TabIndex">19</Property>
+      <Property name="Name">TEXT12</Property>
+      <Property name="ForeColor">Black</Property>
+      <Property name="UserDefineFont" />
+      <Property name="Location">9, 174</Property>
+      <Property name="DataBindings">
+        <Property name="DefaultDataSourceUpdateMode">OnValidation</Property>
+      </Property>
+      <Property name="ID">NULL</Property>
+    </Object>
+    <Object type="uCGUIControlLibrary.EDIT, uCGUIControlLibrary, Version=4.0.0.0, Culture=neutral, PublicKeyToken=null" name="EDIT5" children="Controls">
+      <Property name="Name">EDIT5</Property>
+      <Property name="UserDefineFont" />
+      <Property name="MaxValue">255</Property>
+      <Property name="WM_NOTIFICATION_MOVED_OUT">(False,OnEditMovedOut)</Property>
+      <Property name="MinValue">0</Property>
+      <Property name="TextColor">Black</Property>
+      <Property name="DataBindings">
+        <Property name="DefaultDataSourceUpdateMode">OnValidation</Property>
+      </Property>
+      <Property name="WM_NOTIFICATION_RELEASED">(False,OnEditReleased)</Property>
+      <Property name="ForeColor">Black</Property>
+      <Property name="Location">92, 144</Property>
+      <Property name="WM_NOTIFICATION_CLICKED">(False,OnEditClicked)</Property>
+      <Property name="ID">USER_DEFINE</Property>
+      <Property name="Enable">True</Property>
+      <Property name="visible">True</Property>
+      <Property name="WM_NOTIFICATION_VALUE_CHANGED">(False,OnEditValueChanged)</Property>
+      <Property name="Size">59, 20</Property>
+      <Property name="iID">10</Property>
+      <Property name="TabIndex">18</Property>
+      <Property name="UserDefineID">(GUI_ID_EDIT_RIGHT_LIMIT,GUI_ID_USER+1)</Property>
+      <Property name="EditMode">TextMode</Property>
+    </Object>
+    <Object type="uCGUIControlLibrary.TEXT, uCGUIControlLibrary, Version=4.0.0.0, Culture=neutral, PublicKeyToken=null" name="TEXT11" children="Controls">
+      <Property name="iID">11</Property>
+      <Property name="Size">77, 17</Property>
+      <Property name="Enable">True</Property>
+      <Property name="UserDefineID">(GUI_ID_TEXT10,GUI_ID_USER+1)</Property>
+      <Property name="TextColor">Black</Property>
+      <Property name="visible">True</Property>
+      <Property name="Text">Right Limit:</Property>
+      <Property name="TabIndex">17</Property>
+      <Property name="Name">TEXT11</Property>
+      <Property name="ForeColor">Black</Property>
+      <Property name="UserDefineFont" />
+      <Property name="Location">9, 147</Property>
+      <Property name="DataBindings">
+        <Property name="DefaultDataSourceUpdateMode">OnValidation</Property>
+      </Property>
+      <Property name="ID">NULL</Property>
+    </Object>
+    <Object type="uCGUIControlLibrary.EDIT, uCGUIControlLibrary, Version=4.0.0.0, Culture=neutral, PublicKeyToken=null" name="EDIT4" children="Controls">
+      <Property name="Name">EDIT4</Property>
+      <Property name="UserDefineFont" />
+      <Property name="MaxValue">255</Property>
+      <Property name="WM_NOTIFICATION_MOVED_OUT">(False,OnEditMovedOut)</Property>
+      <Property name="MinValue">0</Property>
+      <Property name="TextColor">Black</Property>
+      <Property name="DataBindings">
+        <Property name="DefaultDataSourceUpdateMode">OnValidation</Property>
+      </Property>
+      <Property name="WM_NOTIFICATION_RELEASED">(False,OnEditReleased)</Property>
+      <Property name="ForeColor">Black</Property>
+      <Property name="Location">92, 119</Property>
+      <Property name="WM_NOTIFICATION_CLICKED">(False,OnEditClicked)</Property>
+      <Property name="ID">USER_DEFINE</Property>
+      <Property name="Enable">True</Property>
+      <Property name="visible">True</Property>
+      <Property name="WM_NOTIFICATION_VALUE_CHANGED">(False,OnEditValueChanged)</Property>
+      <Property name="Size">59, 20</Property>
+      <Property name="iID">10</Property>
+      <Property name="TabIndex">16</Property>
+      <Property name="UserDefineID">(GUI_ID_EDIT_LEFT_LIMIT,GUI_ID_USER+1)</Property>
+      <Property name="EditMode">TextMode</Property>
+    </Object>
+    <Object type="uCGUIControlLibrary.TEXT, uCGUIControlLibrary, Version=4.0.0.0, Culture=neutral, PublicKeyToken=null" name="TEXT10" children="Controls">
+      <Property name="iID">11</Property>
+      <Property name="Size">75, 17</Property>
+      <Property name="Enable">True</Property>
+      <Property name="UserDefineID">(GUI_ID_TEXT10,GUI_ID_USER+1)</Property>
+      <Property name="TextColor">Black</Property>
+      <Property name="visible">True</Property>
+      <Property name="Text">Left Limit:</Property>
+      <Property name="TabIndex">15</Property>
+      <Property name="Name">TEXT10</Property>
+      <Property name="ForeColor">Black</Property>
+      <Property name="UserDefineFont" />
+      <Property name="Location">9, 122</Property>
+      <Property name="DataBindings">
+        <Property name="DefaultDataSourceUpdateMode">OnValidation</Property>
+      </Property>
+      <Property name="ID">NULL</Property>
+    </Object>
+    <Object type="uCGUIControlLibrary.TEXT, uCGUIControlLibrary, Version=4.0.0.0, Culture=neutral, PublicKeyToken=null" name="TEXT8" children="Controls">
+      <Property name="iID">11</Property>
+      <Property name="Size">152, 19</Property>
+      <Property name="Enable">True</Property>
+      <Property name="UserDefineID">(GUI_ID_TEXT10,GUI_ID_USER+1)</Property>
+      <Property name="TextColor">Black</Property>
+      <Property name="visible">True</Property>
+      <Property name="Text">Limit range and outpoint</Property>
+      <Property name="TabIndex">12</Property>
+      <Property name="Name">TEXT8</Property>
+      <Property name="ForeColor">Black</Property>
+      <Property name="UserDefineFont" />
+      <Property name="Location">9, 103</Property>
+      <Property name="DataBindings">
+        <Property name="DefaultDataSourceUpdateMode">OnValidation</Property>
+      </Property>
+      <Property name="ID">NULL</Property>
+    </Object>
+    <Object type="uCGUIControlLibrary.TEXT, uCGUIControlLibrary, Version=4.0.0.0, Culture=neutral, PublicKeyToken=null" name="TEXT7" children="Controls">
+      <Property name="iID">11</Property>
+      <Property name="Size">113, 15</Property>
+      <Property name="Enable">True</Property>
+      <Property name="UserDefineID">(GUI_ID_TEXT10,GUI_ID_USER+1)</Property>
+      <Property name="TextColor">Black</Property>
+      <Property name="visible">True</Property>
+      <Property name="Text">Patten Direction:</Property>
+      <Property name="TabIndex">10</Property>
+      <Property name="Name">TEXT7</Property>
+      <Property name="ForeColor">Black</Property>
+      <Property name="UserDefineFont" />
+      <Property name="Location">8, 73</Property>
+      <Property name="DataBindings">
+        <Property name="DefaultDataSourceUpdateMode">OnValidation</Property>
+      </Property>
+      <Property name="ID">NULL</Property>
+    </Object>
+    <Object type="uCGUIControlLibrary.TEXT, uCGUIControlLibrary, Version=4.0.0.0, Culture=neutral, PublicKeyToken=null" name="TEXT6" children="Controls">
+      <Property name="iID">11</Property>
+      <Property name="Size">25, 15</Property>
+      <Property name="Enable">True</Property>
+      <Property name="UserDefineID">(GUI_ID_TEXT10,GUI_ID_USER+1)</Property>
+      <Property name="TextColor">Black</Property>
+      <Property name="visible">True</Property>
+      <Property name="Text">mm</Property>
+      <Property name="TabIndex">9</Property>
+      <Property name="Name">TEXT6</Property>
+      <Property name="ForeColor">Black</Property>
+      <Property name="TextAlign">TopRight</Property>
+      <Property name="UserDefineFont" />
+      <Property name="Location">187, 54</Property>
+      <Property name="DataBindings">
+        <Property name="DefaultDataSourceUpdateMode">OnValidation</Property>
+      </Property>
+      <Property name="ID">NULL</Property>
+    </Object>
+    <Object type="uCGUIControlLibrary.EDIT, uCGUIControlLibrary, Version=4.0.0.0, Culture=neutral, PublicKeyToken=null" name="EDIT2" children="Controls">
+      <Property name="Name">EDIT2</Property>
+      <Property name="UserDefineFont" />
+      <Property name="MaxValue">255</Property>
+      <Property name="WM_NOTIFICATION_MOVED_OUT">(False,OnEditMovedOut)</Property>
+      <Property name="MinValue">0</Property>
+      <Property name="TextColor">Black</Property>
+      <Property name="DataBindings">
+        <Property name="DefaultDataSourceUpdateMode">OnValidation</Property>
+      </Property>
+      <Property name="WM_NOTIFICATION_RELEASED">(False,OnEditReleased)</Property>
+      <Property name="ForeColor">Black</Property>
+      <Property name="Location">123, 51</Property>
+      <Property name="WM_NOTIFICATION_CLICKED">(False,OnEditClicked)</Property>
+      <Property name="ID">USER_DEFINE</Property>
+      <Property name="Enable">True</Property>
+      <Property name="visible">True</Property>
+      <Property name="WM_NOTIFICATION_VALUE_CHANGED">(False,OnEditValueChanged)</Property>
+      <Property name="Size">55, 17</Property>
+      <Property name="iID">10</Property>
+      <Property name="TabIndex">8</Property>
+      <Property name="UserDefineID">(GUI_ID_EDIT_TIGHTEN_DST,GUI_ID_USER+1)</Property>
+      <Property name="EditMode">TextMode</Property>
+    </Object>
+    <Object type="uCGUIControlLibrary.TEXT, uCGUIControlLibrary, Version=4.0.0.0, Culture=neutral, PublicKeyToken=null" name="TEXT5" children="Controls">
+      <Property name="iID">11</Property>
+      <Property name="Size">115, 15</Property>
+      <Property name="Enable">True</Property>
+      <Property name="UserDefineID">(GUI_ID_TEXT10,GUI_ID_USER+1)</Property>
+      <Property name="TextColor">Black</Property>
+      <Property name="visible">True</Property>
+      <Property name="Text">Tighten distance:</Property>
+      <Property name="TabIndex">7</Property>
+      <Property name="Name">TEXT5</Property>
+      <Property name="ForeColor">Black</Property>
+      <Property name="UserDefineFont" />
+      <Property name="Location">6, 54</Property>
+      <Property name="DataBindings">
+        <Property name="DefaultDataSourceUpdateMode">OnValidation</Property>
+      </Property>
+      <Property name="ID">NULL</Property>
+    </Object>
+    <Object type="uCGUIControlLibrary.TEXT, uCGUIControlLibrary, Version=4.0.0.0, Culture=neutral, PublicKeyToken=null" name="TEXT4" children="Controls">
+      <Property name="iID">11</Property>
+      <Property name="Size">21, 15</Property>
+      <Property name="Enable">True</Property>
+      <Property name="UserDefineID">(GUI_ID_TEXT10,GUI_ID_USER+1)</Property>
+      <Property name="TextColor">Black</Property>
+      <Property name="visible">True</Property>
+      <Property name="Text">mm</Property>
+      <Property name="TabIndex">6</Property>
+      <Property name="Name">TEXT4</Property>
+      <Property name="ForeColor">Black</Property>
+      <Property name="TextAlign">TopRight</Property>
+      <Property name="UserDefineFont" />
+      <Property name="Location">191, 37</Property>
+      <Property name="DataBindings">
+        <Property name="DefaultDataSourceUpdateMode">OnValidation</Property>
+      </Property>
+      <Property name="ID">NULL</Property>
+    </Object>
+    <Object type="uCGUIControlLibrary.EDIT, uCGUIControlLibrary, Version=4.0.0.0, Culture=neutral, PublicKeyToken=null" name="EDIT1" children="Controls">
+      <Property name="Name">EDIT1</Property>
+      <Property name="UserDefineFont" />
+      <Property name="MaxValue">255</Property>
+      <Property name="WM_NOTIFICATION_MOVED_OUT">(False,OnEditMovedOut)</Property>
+      <Property name="MinValue">0</Property>
+      <Property name="TextColor">Black</Property>
+      <Property name="DataBindings">
+        <Property name="DefaultDataSourceUpdateMode">OnValidation</Property>
+      </Property>
+      <Property name="WM_NOTIFICATION_RELEASED">(False,OnEditReleased)</Property>
+      <Property name="ForeColor">Black</Property>
+      <Property name="Location">123, 34</Property>
+      <Property name="WM_NOTIFICATION_CLICKED">(False,OnEditClicked)</Property>
+      <Property name="ID">USER_DEFINE</Property>
+      <Property name="Enable">True</Property>
+      <Property name="visible">True</Property>
+      <Property name="WM_NOTIFICATION_VALUE_CHANGED">(False,OnEditValueChanged)</Property>
+      <Property name="Size">55, 14</Property>
+      <Property name="iID">10</Property>
+      <Property name="TabIndex">5</Property>
+      <Property name="UserDefineID">(GUI_ID_EDIT_STITCH_LENGTH,GUI_ID_USER+1)</Property>
+      <Property name="EditMode">TextMode</Property>
+    </Object>
+    <Object type="uCGUIControlLibrary.TEXT, uCGUIControlLibrary, Version=4.0.0.0, Culture=neutral, PublicKeyToken=null" name="TEXT3" children="Controls">
+      <Property name="iID">11</Property>
+      <Property name="Size">89, 15</Property>
+      <Property name="Enable">True</Property>
+      <Property name="UserDefineID">(GUI_ID_TEXT10,GUI_ID_USER+1)</Property>
+      <Property name="TextColor">Black</Property>
+      <Property name="visible">True</Property>
+      <Property name="Text">Stitch length:</Property>
+      <Property name="TabIndex">4</Property>
+      <Property name="Name">TEXT3</Property>
+      <Property name="ForeColor">Black</Property>
+      <Property name="UserDefineFont" />
+      <Property name="Location">8, 37</Property>
+      <Property name="DataBindings">
+        <Property name="DefaultDataSourceUpdateMode">OnValidation</Property>
+      </Property>
+      <Property name="ID">NULL</Property>
+    </Object>
+    <Object type="uCGUIControlLibrary.EDIT, uCGUIControlLibrary, Version=4.0.0.0, Culture=neutral, PublicKeyToken=null" name="EDIT0" children="Controls">
+      <Property name="Name">EDIT0</Property>
+      <Property name="UserDefineFont" />
+      <Property name="MaxValue">255</Property>
+      <Property name="WM_NOTIFICATION_MOVED_OUT">(False,OnEditMovedOut)</Property>
+      <Property name="MinValue">0</Property>
+      <Property name="TextColor">Black</Property>
+      <Property name="DataBindings">
+        <Property name="DefaultDataSourceUpdateMode">OnValidation</Property>
+      </Property>
+      <Property name="WM_NOTIFICATION_RELEASED">(False,OnEditReleased)</Property>
+      <Property name="ForeColor">Black</Property>
+      <Property name="Location">123, 16</Property>
+      <Property name="WM_NOTIFICATION_CLICKED">(False,OnEditClicked)</Property>
+      <Property name="ID">USER_DEFINE</Property>
+      <Property name="Enable">True</Property>
+      <Property name="visible">True</Property>
+      <Property name="WM_NOTIFICATION_VALUE_CHANGED">(False,OnEditValueChanged)</Property>
+      <Property name="Size">55, 16</Property>
+      <Property name="iID">10</Property>
+      <Property name="TabIndex">3</Property>
+      <Property name="UserDefineID">(GUI_ID_EDIT_SEWING_SPEED,GUI_ID_USER+1)</Property>
+      <Property name="EditMode">TextMode</Property>
+    </Object>
+    <Object type="uCGUIControlLibrary.TEXT, uCGUIControlLibrary, Version=4.0.0.0, Culture=neutral, PublicKeyToken=null" name="TEXT2" children="Controls">
+      <Property name="iID">11</Property>
+      <Property name="Size">37, 15</Property>
+      <Property name="Enable">True</Property>
+      <Property name="UserDefineID">(GUI_ID_TEXT10,GUI_ID_USER+1)</Property>
+      <Property name="TextColor">Black</Property>
+      <Property name="visible">True</Property>
+      <Property name="Text">s.p.m</Property>
+      <Property name="TabIndex">2</Property>
+      <Property name="Name">TEXT2</Property>
+      <Property name="ForeColor">Black</Property>
+      <Property name="TextAlign">TopRight</Property>
+      <Property name="UserDefineFont" />
+      <Property name="Location">175, 19</Property>
+      <Property name="DataBindings">
+        <Property name="DefaultDataSourceUpdateMode">OnValidation</Property>
+      </Property>
+      <Property name="ID">NULL</Property>
+    </Object>
+    <Object type="uCGUIControlLibrary.TEXT, uCGUIControlLibrary, Version=4.0.0.0, Culture=neutral, PublicKeyToken=null" name="TEXT0" children="Controls">
+      <Property name="iID">11</Property>
+      <Property name="Size">83, 15</Property>
+      <Property name="Enable">True</Property>
+      <Property name="UserDefineID">(GUI_ID_TEXT10,GUI_ID_USER+1)</Property>
+      <Property name="TextColor">Black</Property>
+      <Property name="visible">True</Property>
+      <Property name="Text">Sewing speed:</Property>
+      <Property name="TabIndex">0</Property>
+      <Property name="Name">TEXT0</Property>
+      <Property name="ForeColor">Black</Property>
+      <Property name="UserDefineFont" />
+      <Property name="Location">8, 19</Property>
+      <Property name="DataBindings">
+        <Property name="DefaultDataSourceUpdateMode">OnValidation</Property>
+      </Property>
+      <Property name="ID">NULL</Property>
+    </Object>
+    <Property name="ShowMinButton">False</Property>
+    <Property name="ShowMaxButton">False</Property>
+    <Property name="Size">400, 320</Property>
+    <Property name="DataBindings">
+      <Property name="DefaultDataSourceUpdateMode">OnValidation</Property>
+    </Property>
+    <Property name="Caption">Setting</Property>
+    <Property name="Name">FRAMEWIN0</Property>
+  </Object>
+<!--CodesFile:Setting.c|*|-->
+<!--EventsFile:SettingCB.c|**|-->
