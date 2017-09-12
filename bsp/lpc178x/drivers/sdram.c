@@ -2,6 +2,7 @@
 
 #include <system_LPC177x_8x.h>
 #include "LPC177x_8x.h"
+#include "lpc177x_8x_pinsel.h"
 #include "sdram.h"
 
 //LPC_EMC_TypeDef	* const g_pEMC = ((LPC_EMC_TypeDef*) LPC_EMC_BASE);
@@ -81,115 +82,39 @@ static void delayMs(int a,int b)
 
 static void EMC_GPIO_Init (void)
 {
-  LPC_IOCON->P3_0 = (1<<0 | 0<<3 | 0<<5 | 1<<9); /* D0 @ P3.0 */
-  LPC_IOCON->P3_1 = (1<<0 | 0<<3 | 0<<5 | 1<<9); /* D1 @ P3.1 */
-  LPC_IOCON->P3_2 = (1<<0 | 0<<3 | 0<<5 | 1<<9); /* D2 @ P3.2 */
-  LPC_IOCON->P3_3 = (1<<0 | 0<<3 | 0<<5 | 1<<9); /* D3 @ P3.3 */
+	volatile uint32_t i;
+//	PINSEL_ConfigPin(2,14,1);	   /* P2.14 - /EMC_CS2 */
+//	PINSEL_ConfigPin(2,15,1);	   /* P2.15 - /EMC_CS3 */
+	PINSEL_ConfigPin(2,16,1);	   /* P2.16 - /EMC_CAS */
+	PINSEL_ConfigPin(2,17,1);	   /* P2.17 - /EMC_RAS */
+	PINSEL_ConfigPin(2,18,1);	   /* P2.18 - EMC_CLK[0] */
+//	PINSEL_ConfigPin(2,19,1);	   /* P2.19 - EMC_CLK[1] */
+	PINSEL_ConfigPin(2,20,1);	   /* P2.20 - EMC_DYCS0 */
+//	PINSEL_ConfigPin(2,21,1);	   /* P2.21 - EMC_DYCS1 */
+//  PINSEL_ConfigPin(2,22,1);	   /* P2.22 - EMC_DYCS2 */
+//	PINSEL_ConfigPin(2,23,1);	   /* P2.23 - EMC_DYCS3 */
+	PINSEL_ConfigPin(2,24,1);	   /* P2.24 - EMC_CKE0 */
+//	PINSEL_ConfigPin(2,25,1);	   /* P2.25 - EMC_CKE1 */
+//	PINSEL_ConfigPin(2,26,1);	   /* P2.26 - EMC_CKE2 */
+//	PINSEL_ConfigPin(2,27,1);	   /* P2.27 - EMC_CKE3 */
+	PINSEL_ConfigPin(2,28,1);	   /* P2.28 - EMC_DQM0 */
+	PINSEL_ConfigPin(2,29,1);	   /* P2.29 - EMC_DQM1 */
+//	PINSEL_ConfigPin(2,30,1);	   /* P2.30 - EMC_DQM2 */
+//	PINSEL_ConfigPin(2,31,1);	   /* P2.31 - EMC_DQM3 */
 
-  LPC_IOCON->P3_4 = (1<<0 | 0<<3 | 0<<5 | 1<<9); /* D4 @ P3.4 */
-  LPC_IOCON->P3_5 = (1<<0 | 0<<3 | 0<<5 | 1<<9); /* D5 @ P3.5 */
-  LPC_IOCON->P3_6 = (1<<0 | 0<<3 | 0<<5 | 1<<9); /* D6 @ P3.6 */
-  LPC_IOCON->P3_7 = (1<<0 | 0<<3 | 0<<5 | 1<<9); /* D7 @ P3.7 */
+//	PINSEL_ConfigPin(4,24,1);	   /* P4.24 - /EMC_OE */
+	PINSEL_ConfigPin(4,25,1);	   /* P4.25 - /EMC_WE */
+//	PINSEL_ConfigPin(4,30,1);	   /* P4.30 - /EMC_CS0 */
+//	PINSEL_ConfigPin(4,31,1);	   /* P4.31 - /EMC_CS1 */
+	for(i = 0; i < 16; i++)
+	{
+		PINSEL_ConfigPin(3,i,1);   /* P3.0-P3.15 - EMC_D[0-15] */
+	}
 
-  LPC_IOCON->P3_8 = (1<<0 | 0<<3 | 0<<5 | 1<<9); /* D8 @ P3.8 */
-  LPC_IOCON->P3_9 = (1<<0 | 0<<3 | 0<<5 | 1<<9); /* D9 @ P3.9 */
-  LPC_IOCON->P3_10 = (1<<0 | 0<<3 | 0<<5 | 1<<9); /* D10 @ P3.10 */
-  LPC_IOCON->P3_11 = (1<<0 | 0<<3 | 0<<5 | 1<<9); /* D11 @ P3.11 */
-
-  LPC_IOCON->P3_12 = (1<<0 | 0<<3 | 0<<5 | 1<<9); /* D12 @ P3.12 */
-  LPC_IOCON->P3_13 = (1<<0 | 0<<3 | 0<<5 | 1<<9); /* D13 @ P3.13 */
-  LPC_IOCON->P3_14 = (1<<0 | 0<<3 | 0<<5 | 1<<9); /* D14 @ P3.14 */
-  LPC_IOCON->P3_15 = (1<<0 | 0<<3 | 0<<5 | 1<<9); /* D15 @ P3.15 */
-
-  LPC_IOCON->P3_16 = (1<<0 | 0<<3 | 0<<5 | 1<<9); /* D16 @ P3.16 */
-  LPC_IOCON->P3_17 = (1<<0 | 0<<3 | 0<<5 | 1<<9); /* D17 @ P3.17 */
-  LPC_IOCON->P3_18 = (1<<0 | 0<<3 | 0<<5 | 1<<9); /* D18 @ P3.18 */
-  LPC_IOCON->P3_19 = (1<<0 | 0<<3 | 0<<5 | 1<<9); /* D19 @ P3.19 */
-
-  LPC_IOCON->P3_20 = (1<<0 | 0<<3 | 0<<5 | 1<<9); /* D20 @ P3.20 */
-  LPC_IOCON->P3_21 = (1<<0 | 0<<3 | 0<<5 | 1<<9); /* D21 @ P3.21 */
-  LPC_IOCON->P3_22 = (1<<0 | 0<<3 | 0<<5 | 1<<9); /* D22 @ P3.22 */
-  LPC_IOCON->P3_23 = (1<<0 | 0<<3 | 0<<5 | 1<<9); /* D23 @ P3.23 */
-
-  LPC_IOCON->P3_24 = (1<<0 | 0<<3 | 0<<5 | 1<<9); /* D24 @ P3.24 */
-  LPC_IOCON->P3_25 = (1<<0 | 0<<3 | 0<<5 | 1<<9); /* D25 @ P3.25 */
-  LPC_IOCON->P3_26 = (1<<0 | 0<<3 | 0<<5 | 1<<9); /* D26 @ P3.26 */
-  LPC_IOCON->P3_27 = (1<<0 | 0<<3 | 0<<5 | 1<<9); /* D27 @ P3.27 */
-
-  LPC_IOCON->P3_28 = (1<<0 | 0<<3 | 0<<5 | 1<<9); /* D28 @ P3.28 */
-  LPC_IOCON->P3_29 = (1<<0 | 0<<3 | 0<<5 | 1<<9); /* D29 @ P3.29 */
-  LPC_IOCON->P3_30 = (1<<0 | 0<<3 | 0<<5 | 1<<9); /* D30 @ P3.30 */
-  LPC_IOCON->P3_31 = (1<<0 | 0<<3 | 0<<5 | 1<<9); /* D31 @ P3.31 */
-
-  LPC_IOCON->P4_0 = (1<<0 | 0<<3 | 0<<5 | 1<<9); /* A0 @ P4.0 */
-  LPC_IOCON->P4_1 = (1<<0 | 0<<3 | 0<<5 | 1<<9); /* A1 @ P4.1 */
-  LPC_IOCON->P4_2 = (1<<0 | 0<<3 | 0<<5 | 1<<9); /* A2 @ P4.2 */
-  LPC_IOCON->P4_3 = (1<<0 | 0<<3 | 0<<5 | 1<<9); /* A3 @ P4.3 */
-
-  LPC_IOCON->P4_4 = (1<<0 | 0<<3 | 0<<5 | 1<<9); /* A4 @ P4.4 */
-  LPC_IOCON->P4_5 = (1<<0 | 0<<3 | 0<<5 | 1<<9); /* A5 @ P4.5 */
-  LPC_IOCON->P4_6 = (1<<0 | 0<<3 | 0<<5 | 1<<9); /* A6 @ P4.6 */
-  LPC_IOCON->P4_7 = (1<<0 | 0<<3 | 0<<5 | 1<<9); /* A7 @ P4.7 */
-
-  LPC_IOCON->P4_8 = (1<<0 | 0<<3 | 0<<5 | 1<<9); /* A8 @ P4.8 */
-  LPC_IOCON->P4_9 = (1<<0 | 0<<3 | 0<<5 | 1<<9); /* A9 @ P4.9 */
-  LPC_IOCON->P4_10 = (1<<0 | 0<<3 | 0<<5 | 1<<9); /* A10 @ P4.10 */
-  LPC_IOCON->P4_11 = (1<<0 | 0<<3 | 0<<5 | 1<<9); /* A11 @ P4.11 */
-
-  LPC_IOCON->P4_12 = (1<<0 | 0<<3 | 0<<5 | 1<<9); /* A12 @ P4.12 */
-  LPC_IOCON->P4_13 = (1<<0 | 0<<3 | 0<<5 | 1<<9); /* A13 @ P4.13 */
-  LPC_IOCON->P4_14 = (1<<0 | 0<<3 | 0<<5 | 1<<9); /* A14 @ P4.14 */
-  LPC_IOCON->P4_15 = (1<<0 | 0<<3 | 0<<5 | 1<<9); /* A15 @ P4.15 */
-
-  LPC_IOCON->P4_16 = (1<<0 | 0<<3 | 0<<5 | 1<<9); /* A16 @ P4.16 */
-  LPC_IOCON->P4_17 = (1<<0 | 0<<3 | 0<<5 | 1<<9); /* A17 @ P4.17 */
-  LPC_IOCON->P4_18 = (1<<0 | 0<<3 | 0<<5 | 1<<9); /* A18 @ P4.18 */
-  LPC_IOCON->P4_19 = (1<<0 | 0<<3 | 0<<5 | 1<<9); /* A19 @ P4.19 */
-
-  LPC_IOCON->P4_20 = (1<<0 | 0<<3 | 0<<5 | 1<<9); /* A20 @ P4.20 */
-  LPC_IOCON->P4_21 = (1<<0 | 0<<3 | 0<<5 | 1<<9); /* A21 @ P4.21 */
-  LPC_IOCON->P4_22 = (1<<0 | 0<<3 | 0<<5 | 1<<9); /* A22 @ P4.22 */
-  LPC_IOCON->P4_23 = (1<<0 | 0<<3 | 0<<5 | 1<<9); /* A23 @ P4.23 */
-
-  LPC_IOCON->P4_25 = (1<<0 | 0<<3 | 0<<5 | 1<<9); /* WEN @ P4.25 */
-
-#if 1
-  LPC_IOCON->P4_24 = (1<<0 | 0<<3 | 0<<5 | 1<<9); /* OEN @ P4.24 */
-
-  LPC_IOCON->P4_26 = (1<<0 | 0<<3 | 0<<5 | 1<<9); /* BLSN[0] @ P4.26 */
-  LPC_IOCON->P4_27 = (1<<0 | 0<<3 | 0<<5 | 1<<9); /* BLSN[1] @ P4.27 */
-
-  LPC_IOCON->P4_28 = (1<<0 | 0<<3 | 0<<5 | 1<<9); /* BLSN[2] @ P4.28 */
-  LPC_IOCON->P4_29 = (1<<0 | 0<<3 | 0<<5 | 1<<9); /* BLSN[3] @ P4.29 */
-  LPC_IOCON->P4_30 = (1<<0 | 0<<3 | 0<<5 | 1<<9); /* CSN[0] @ P4.30 */
-  LPC_IOCON->P4_31 = (1<<0 | 0<<3 | 0<<5 | 1<<9); /* CSN[1] @ P4.31 */
-
-  LPC_IOCON->P2_14 = (1<<0 | 0<<3 | 0<<5 | 1<<9); /* CSN[2] @ P2.14 */
-  LPC_IOCON->P2_15 = (1<<0 | 0<<3 | 0<<5 | 1<<9); /* CSN[3] @ P2.15 */
-#endif
-
-#if 1
-  LPC_IOCON->P2_16 = (1<<0 | 0<<3 | 0<<5 | 1<<9); /* CASN @ P2.16 */
-  LPC_IOCON->P2_17 = (1<<0 | 0<<3 | 0<<5 | 1<<9); /* RASN @ P2.17 */
-  LPC_IOCON->P2_18 = (1<<0 | 0<<3 | 0<<5 | 1<<9); /* CLK[0] @ P2.18 */
-  LPC_IOCON->P2_19 = (1<<0 | 0<<3 | 0<<5 | 1<<9); /* CLK[1] @ P2.19 */
-
-  LPC_IOCON->P2_20 = (1<<0 | 0<<3 | 0<<5 | 1<<9); /* DYCSN[0] @ P2.20 */
-  LPC_IOCON->P2_21 = (1<<0 | 0<<3 | 0<<5 | 1<<9); /* DYCSN[1] @ P2.21 */
-  LPC_IOCON->P2_22 = (1<<0 | 0<<3 | 0<<5 | 1<<9); /* DYCSN[2] @ P2.22 */
-  LPC_IOCON->P2_23 = (1<<0 | 0<<3 | 0<<5 | 1<<9); /* DYCSN[3] @ P2.23 */
-
-  LPC_IOCON->P2_24 = (1<<0 | 0<<3 | 0<<5 | 1<<9); /* CKE[0] @ P2.24 */
-
-//  LPC_IOCON->P2_25 = (1<<0 | 0<<3 | 0<<5 | 1<<9); /* CKE[1] @ P2.25 */
-  LPC_IOCON->P2_26 = (1<<0 | 0<<3 | 0<<5 | 1<<9); /* CKE[2] @ P2.26 */
-  LPC_IOCON->P2_27 = (1<<0 | 0<<3 | 0<<5 | 1<<9); /* CKE[3] @ P2.27 */
-
-  LPC_IOCON->P2_28 = (1<<0 | 0<<3 | 0<<5 | 1<<9); /* DQM[0] @ P2.28 */
-  LPC_IOCON->P2_29 = (1<<0 | 0<<3 | 0<<5 | 1<<9); /* DQM[1] @ P2.29 */
-  LPC_IOCON->P2_30 = (1<<0 | 0<<3 | 0<<5 | 1<<9); /* DQM[2] @ P2.30 */
-  LPC_IOCON->P2_31 = (1<<0 | 0<<3 | 0<<5 | 1<<9); /* DQM[3] @ P2.31 */
-#endif
+	for(i = 0; i < 15; i++)
+	{
+		PINSEL_ConfigPin(4,i,1);   /* P4.0-P4.14 - EMC_A[0-14] */
+	}
 }
 
 void SDRAM_Init (void)
@@ -249,7 +174,6 @@ void SDRAM_Init (void)
     delayMs(0, 200);							  /* wait 200ms */
 
     LPC_EMC->DynamicControl    = 0x00000103; /* Issue PALL command */
-
     LPC_EMC->DynamicRefresh    = 0x00000002; /* ( n * 16 ) -> 32 clock cycles */
     for(i = 0; i < 0x80; i++);	              /* wait 128 AHB clock cycles */
     /* 64ms/8192=7.8125us, nx16x8.33ns<7.8125us, n<58.6*/
@@ -262,17 +186,14 @@ void SDRAM_Init (void)
     LPC_EMC->DynamicControl    = 0x00000083; /* Issue MODE command */
 
 #ifdef SDRAM_CONFIG_16BIT
-
     wtemp = *((volatile uint16_t *)(SDRAM_BASE | (0x33<<12))); /* 8 burst, 3 CAS latency */
 #elif defined SDRAM_CONFIG_32BIT
     dwtemp = *((volatile uint32_t *)(SDRAM_BASE | (0x32<<13)));	/* 4 burst, 3 CAS latency */
 #endif
 
     LPC_EMC->DynamicControl    = 0x00000000; /* Issue NORMAL command */
-
     LPC_EMC->DynamicConfig0 |= 0x80000; /* enable buffer */
     delayMs(0, 1);
-
 }
 
 

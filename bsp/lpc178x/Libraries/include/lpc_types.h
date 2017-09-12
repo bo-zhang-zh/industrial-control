@@ -24,6 +24,12 @@
 * notification. NXP Semiconductors also make no representation or
 * warranty that such application will be suitable for the specified
 * use without further testing or modification.
+* Permission to use, copy, modify, and distribute this software and its
+* documentation is hereby granted, under NXP Semiconductors'
+* relevant copyright in the software, without fee, provided that it
+* is used in conjunction with NXP Semiconductors microcontrollers.  This
+* copyright, permission, and disclaimer notice must appear in all copies of
+* this code.
 **********************************************************************/
 
 /* Type group ----------------------------------------------------------- */
@@ -138,8 +144,12 @@ typedef int32_t(*PFI)();
 /* External data/function define */
 #define EXTERN extern
 
+#if !defined(MAX)
 #define MAX(a, b) (((a) > (b)) ? (a) : (b))
+#endif
+#if !defined(MIN)
 #define MIN(a, b) (((a) < (b)) ? (a) : (b))
+#endif
 
 /**
  * @}
@@ -152,7 +162,7 @@ typedef int32_t(*PFI)();
  */
 
 /** SMA type for character type */
-typedef char CHAR;
+//typedef char CHAR;
 
 /** SMA type for 8 bit unsigned value */
 typedef uint8_t UNS_8;

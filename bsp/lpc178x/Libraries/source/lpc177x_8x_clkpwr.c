@@ -22,19 +22,31 @@
 * notification. NXP Semiconductors also make no representation or
 * warranty that such application will be suitable for the specified
 * use without further testing or modification.
+* Permission to use, copy, modify, and distribute this software and its
+* documentation is hereby granted, under NXP Semiconductors'
+* relevant copyright in the software, without fee, provided that it
+* is used in conjunction with NXP Semiconductors microcontrollers.  This
+* copyright, permission, and disclaimer notice must appear in all copies of
+* this code.
 **********************************************************************/
 
 /* Peripheral group ----------------------------------------------------------- */
 /** @addtogroup CLKPWR
  * @{
  */
-
+#ifdef __BUILD_WITH_EXAMPLE__
+#include "lpc177x_8x_libcfg.h"
+#else
+#include "lpc177x_8x_libcfg_default.h"
+#endif /* __BUILD_WITH_EXAMPLE__ */
+#ifdef _CLKPWR
+ 
 /* Includes ------------------------------------------------------------------- */
 #include "lpc177x_8x_clkpwr.h"
 
-
 uint32_t USBFrequency = 0;
-uint32_t SPIFIFrequency = 0;
+
+
 /* Public Functions ----------------------------------------------------------- */
 /** @addtogroup CLKPWR_Public_Functions
  * @{
@@ -63,23 +75,32 @@ uint32_t SPIFIFrequency = 0;
  **********************************************************************/
 void CLKPWR_SetCLKDiv (uint8_t ClkType, uint8_t DivVal)
 {
+	uint32_t tmp;
 	switch(ClkType)
 	{
 	case CLKPWR_CLKTYPE_CPU:
-		LPC_SC->CCLKSEL = DivVal;
+		tmp = 	LPC_SC->CCLKSEL & ~(0x1F);
+		tmp |=  DivVal & 0x1F;
+		LPC_SC->CCLKSEL = tmp;
 		SystemCoreClockUpdate(); //Update clock
 		break;
 	case CLKPWR_CLKTYPE_PER:
-		LPC_SC->PCLKSEL = DivVal;
+		tmp = 	LPC_SC->PCLKSEL & ~(0x1F);
+		tmp |=  DivVal & 0x1F;
+		LPC_SC->PCLKSEL = tmp;
 		SystemCoreClockUpdate(); //Update clock
 		break;
 	case CLKPWR_CLKTYPE_EMC:
-		LPC_SC->EMCCLKSEL = DivVal;
+		tmp = 	LPC_SC->EMCCLKSEL & ~(0x01);
+		tmp |=  DivVal & 0x01;
+		LPC_SC->EMCCLKSEL = tmp;
 		SystemCoreClockUpdate(); //Update clock
 		break;
 	case CLKPWR_CLKTYPE_USB:
-		LPC_SC->USBCLKSEL &= ~(0x0000001F);
-		LPC_SC->USBCLKSEL |= DivVal;
+		tmp = 	LPC_SC->USBCLKSEL & ~(0x1F);
+		tmp |=  DivVal & 0x1F;
+		LPC_SC->USBCLKSEL |= DivVal & 0x1F;
+		SystemCoreClockUpdate(); //Update clock
 		break;
 	default:
 		while(1);//Error Loop;
@@ -119,41 +140,43 @@ uint32_t CLKPWR_GetCLK (uint8_t ClkType)
  * @brief 		Configure power supply for each peripheral according to NewState
  * @param[in]	PPType	Type of peripheral used to enable power,
  *     			should be one of the following:
- *     			-  CLKPWR_PCONP_PCLCD		: LCD
- *     			-  CLKPWR_PCONP_PCTIM0 		: Timer 0
-				-  CLKPWR_PCONP_PCTIM1 		: Timer 1
-				-  CLKPWR_PCONP_PCUART0  	: UART 0
-				-  CLKPWR_PCONP_PCUART1   	: UART 1
-				-  CLKPWR_PCONP_PCPWM0		: PWM 0
-				-  CLKPWR_PCONP_PCPWM1 		: PWM 1
-				-  CLKPWR_PCONP_PCI2C0 		: I2C 0
-				-  CLKPWR_PCONP_PCUART4		: UART4
-				-  CLKPWR_PCONP_PCRTC   	: RTC
-				-  CLKPWR_PCONP_PCSSP1 		: SSP 1
-				-  CLKPWR_PCONP_PCEMC		: EMC
-				-  CLKPWR_PCONP_PCADC   		: ADC
-				-  CLKPWR_PCONP_PCAN1   	: CAN 1
-				-  CLKPWR_PCONP_PCAN2   	: CAN 2
-				-  CLKPWR_PCONP_PCGPIO 		: GPIO
-				-  CLKPWR_PCONP_PCMC 		: MCPWM
-				-  CLKPWR_PCONP_PCQEI 		: QEI
-				-  CLKPWR_PCONP_PCI2C1   	: I2C 1
-				-  CLKPWR_PCONP_PCSSP2		: SSP 2
-				-  CLKPWR_PCONP_PCSSP0 		: SSP 0
-				-  CLKPWR_PCONP_PCTIM2 		: Timer 2
-				-  CLKPWR_PCONP_PCTIM3 		: Timer 3
-				-  CLKPWR_PCONP_PCUART2  	: UART 2
-				-  CLKPWR_PCONP_PCUART3   	: UART 3
-				-  CLKPWR_PCONP_PCI2C2 		: I2C 2
-				-  CLKPWR_PCONP_PCI2S   	: I2S
-				-  CLKPWR_PCONP_PCSDC		: SDC
-				-  CLKPWR_PCONP_PCGPDMA   	: GPDMA
-				-  CLKPWR_PCONP_PCENET 		: Ethernet
-				-  CLKPWR_PCONP_PCUSB   	: USB
+ *				-  CLKPWR_PCONP_PCLCD		: LCD
+ *				-  CLKPWR_PCONP_PCTIM0 		: Timer 0
+ *				-  CLKPWR_PCONP_PCTIM1 		: Timer 1
+ *				-  CLKPWR_PCONP_PCUART0  	: UART 0
+ *				-  CLKPWR_PCONP_PCUART1   	: UART 1
+ *				-  CLKPWR_PCONP_PCPWM0		: PWM 0
+ *				-  CLKPWR_PCONP_PCPWM1 		: PWM 1
+ *				-  CLKPWR_PCONP_PCI2C0 		: I2C 0
+ *				-  CLKPWR_PCONP_PCUART4		: UART4
+ *				-  CLKPWR_PCONP_PCLCD		: LCD
+ *				-  CLKPWR_PCONP_PCTIM0 		: Timer 0
+ *				-  CLKPWR_PCONP_PCRTC   	: RTC
+ *				-  CLKPWR_PCONP_PCSSP1 		: SSP 1
+ *				-  CLKPWR_PCONP_PCEMC		: EMC
+ *				-  CLKPWR_PCONP_PCADC   	: ADC
+ *				-  CLKPWR_PCONP_PCAN1   	: CAN 1
+ *				-  CLKPWR_PCONP_PCAN2   	: CAN 2
+ *				-  CLKPWR_PCONP_PCGPIO 		: GPIO
+ *				-  CLKPWR_PCONP_PCMC 		: MCPWM
+ *				-  CLKPWR_PCONP_PCQEI 		: QEI
+ *				-  CLKPWR_PCONP_PCI2C1   	: I2C 1
+ *				-  CLKPWR_PCONP_PCSSP2		: SSP 2
+ *				-  CLKPWR_PCONP_PCSSP0 		: SSP 0
+ *				-  CLKPWR_PCONP_PCTIM2 		: Timer 2
+ *				-  CLKPWR_PCONP_PCTIM3 		: Timer 3
+ *				-  CLKPWR_PCONP_PCUART2  	: UART 2
+ *				-  CLKPWR_PCONP_PCUART3   	: UART 3
+ *				-  CLKPWR_PCONP_PCI2C2 		: I2C 2
+ *				-  CLKPWR_PCONP_PCI2S   	: I2S
+ *				-  CLKPWR_PCONP_PCSDC		: SDC
+ *				-  CLKPWR_PCONP_PCGPDMA   	: GPDMA
+ *				-  CLKPWR_PCONP_PCENET 		: Ethernet
+ *				-  CLKPWR_PCONP_PCUSB   	: USB
  *
  * @param[in]	NewState	New state of Peripheral Power, should be:
- * 				- ENABLE	: Enable power for this peripheral
- * 				- DISABLE	: Disable power for this peripheral
+ *				- ENABLE	: Enable power for this peripheral
+ *				- DISABLE	: Disable power for this peripheral
  *
  * @return none
  **********************************************************************/
@@ -255,7 +278,7 @@ void CLKPWR_DeepSleep(void)
 {
     /* Deep-Sleep Mode, set SLEEPDEEP bit */
 	SCB->SCR = 0x4;
-	LPC_SC->PCON = 0x8;
+	LPC_SC->PCON = 0x00;
 	/* Deep Sleep Mode*/
 	__WFI();
 }
@@ -270,7 +293,7 @@ void CLKPWR_PowerDown(void)
 {
     /* Deep-Sleep Mode, set SLEEPDEEP bit */
 	SCB->SCR = 0x4;
-	LPC_SC->PCON = 0x09;
+	LPC_SC->PCON = 0x01;
 	/* Power Down Mode*/
 	__WFI();
 }
@@ -293,6 +316,8 @@ void CLKPWR_DeepPowerDown(void)
 /**
  * @}
  */
+ 
+#endif /*_CLKPWR*/
 
 /**
  * @}
