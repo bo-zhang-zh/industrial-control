@@ -100,11 +100,11 @@ void rt_init_thread_entry(void *parameter)
 }
 
 // init led
-#define rt_hw_led_init()   LPC_GPIO2->DIR |= 1<<25;
+#define rt_hw_led_init()   LPC_GPIO2->DIR |= 1<<21;
 // trun on led n
-#define rt_hw_led_on(n)    LPC_GPIO2->CLR |= 1<<25;
+#define rt_hw_led_on(n)    LPC_GPIO2->CLR |= 1<<21;
 // trun off led n
-#define rt_hw_led_off(n)   LPC_GPIO2->SET |= 1<<25;
+#define rt_hw_led_off(n)   LPC_GPIO2->SET |= 1<<21;
 
 ALIGN(RT_ALIGN_SIZE)
 static char thread_led_stack[1024];

@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no" ?>
 <Project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="project_proj.xsd">
+
   <SchemaVersion>1.1</SchemaVersion>
+
   <Header>### uVision Project, (C) Keil Software</Header>
+
   <Targets>
     <Target>
       <TargetName>RT-Thread LPC17xx</TargetName>
@@ -12,25 +15,26 @@
           <Device>LPC1788</Device>
           <Vendor>NXP (founded by Philips)</Vendor>
           <Cpu>IRAM(0x10000000-0x1000FFFF) IRAM2(0x20000000-0x20007FFF) IROM(0-0x7FFFF) CLOCK(12000000) CPUTYPE("Cortex-M3")</Cpu>
-          <FlashUtilSpec />
+          <FlashUtilSpec></FlashUtilSpec>
           <StartupFile>"STARTUP\NXP\LPC177x_8x\startup_LPC177x_8x.s" ("NXP LPC177x_8x Startup Code")</StartupFile>
           <FlashDriverDll>UL2CM3(-O463 -S0 -C0 -FO7 -FD10000000 -FC800 -FN1 -FF0LPC_IAP_512 -FS00 -FL080000)</FlashDriverDll>
           <DeviceId>5325</DeviceId>
           <RegisterFile>LPC177x_8x.H</RegisterFile>
-          <MemoryEnv />
-          <Cmp />
-          <Asm />
-          <Linker />
-          <OHString />
-          <InfinionOptionDll />
-          <SLE66CMisc />
-          <SLE66AMisc />
-          <SLE66LinkerMisc />
-          <SFDFile />
+          <MemoryEnv></MemoryEnv>
+          <Cmp></Cmp>
+          <Asm></Asm>
+          <Linker></Linker>
+          <OHString></OHString>
+          <InfinionOptionDll></InfinionOptionDll>
+          <SLE66CMisc></SLE66CMisc>
+          <SLE66AMisc></SLE66AMisc>
+          <SLE66LinkerMisc></SLE66LinkerMisc>
+          <SFDFile></SFDFile>
+          <bCustSvd>0</bCustSvd>
           <UseEnv>0</UseEnv>
-          <BinPath />
-          <IncludePath />
-          <LibPath />
+          <BinPath></BinPath>
+          <IncludePath></IncludePath>
+          <LibPath></LibPath>
           <RegisterFilePath>NXP\LPC177x_8x\</RegisterFilePath>
           <DBRegisterFilePath>NXP\LPC177x_8x\</DBRegisterFilePath>
           <TargetStatus>
@@ -54,29 +58,31 @@
           <BeforeCompile>
             <RunUserProg1>0</RunUserProg1>
             <RunUserProg2>0</RunUserProg2>
-            <UserProg1Name />
-            <UserProg2Name />
+            <UserProg1Name></UserProg1Name>
+            <UserProg2Name></UserProg2Name>
             <UserProg1Dos16Mode>0</UserProg1Dos16Mode>
             <UserProg2Dos16Mode>0</UserProg2Dos16Mode>
+            <nStopU1X>0</nStopU1X>
+            <nStopU2X>0</nStopU2X>
           </BeforeCompile>
           <BeforeMake>
             <RunUserProg1>0</RunUserProg1>
             <RunUserProg2>0</RunUserProg2>
-            <UserProg1Name />
-            <UserProg2Name />
+            <UserProg1Name></UserProg1Name>
+            <UserProg2Name></UserProg2Name>
             <UserProg1Dos16Mode>0</UserProg1Dos16Mode>
             <UserProg2Dos16Mode>0</UserProg2Dos16Mode>
           </BeforeMake>
           <AfterMake>
             <RunUserProg1>0</RunUserProg1>
             <RunUserProg2>0</RunUserProg2>
-            <UserProg1Name />
-            <UserProg2Name />
+            <UserProg1Name></UserProg1Name>
+            <UserProg2Name></UserProg2Name>
             <UserProg1Dos16Mode>0</UserProg1Dos16Mode>
             <UserProg2Dos16Mode>0</UserProg2Dos16Mode>
           </AfterMake>
           <SelectedForBatchBuild>0</SelectedForBatchBuild>
-          <SVCSIdString />
+          <SVCSIdString></SVCSIdString>
         </TargetCommonOption>
         <CommonProperty>
           <UseCPPCompiler>0</UseCPPCompiler>
@@ -90,8 +96,9 @@
           <AssembleAssemblyFile>0</AssembleAssemblyFile>
           <PublicsOnly>0</PublicsOnly>
           <StopOnExitCode>3</StopOnExitCode>
-          <CustomArgument />
-          <IncludeLibraryModules />
+          <CustomArgument></CustomArgument>
+          <IncludeLibraryModules></IncludeLibraryModules>
+          <ComprImg>1</ComprImg>
         </CommonProperty>
         <DllOption>
           <SimDllName>SARMCM3.DLL</SimDllName>
@@ -121,32 +128,36 @@
             <RestoreFunctions>1</RestoreFunctions>
             <RestoreToolbox>1</RestoreToolbox>
             <LimitSpeedToRealTime>0</LimitSpeedToRealTime>
+            <RestoreSysVw>1</RestoreSysVw>
           </Simulator>
           <Target>
             <UseTarget>1</UseTarget>
             <LoadApplicationAtStartup>1</LoadApplicationAtStartup>
-            <RunToMain>0</RunToMain>
+            <RunToMain>1</RunToMain>
             <RestoreBreakpoints>1</RestoreBreakpoints>
             <RestoreWatchpoints>1</RestoreWatchpoints>
             <RestoreMemoryDisplay>1</RestoreMemoryDisplay>
             <RestoreFunctions>0</RestoreFunctions>
             <RestoreToolbox>1</RestoreToolbox>
+            <RestoreTracepoints>0</RestoreTracepoints>
+            <RestoreSysVw>1</RestoreSysVw>
+            <UsePdscDebugDescription>0</UsePdscDebugDescription>
           </Target>
           <RunDebugAfterBuild>0</RunDebugAfterBuild>
-          <TargetSelection>7</TargetSelection>
+          <TargetSelection>6</TargetSelection>
           <SimDlls>
-            <CpuDll />
-            <CpuDllArguments />
-            <PeripheralDll />
-            <PeripheralDllArguments />
-            <InitializationFile />
+            <CpuDll></CpuDll>
+            <CpuDllArguments></CpuDllArguments>
+            <PeripheralDll></PeripheralDll>
+            <PeripheralDllArguments></PeripheralDllArguments>
+            <InitializationFile></InitializationFile>
           </SimDlls>
           <TargetDlls>
-            <CpuDll />
-            <CpuDllArguments />
-            <PeripheralDll />
-            <PeripheralDllArguments />
-            <InitializationFile />
+            <CpuDll></CpuDll>
+            <CpuDllArguments></CpuDllArguments>
+            <PeripheralDll></PeripheralDll>
+            <PeripheralDllArguments></PeripheralDllArguments>
+            <InitializationFile></InitializationFile>
             <Driver>Segger\JL2CM3.dll</Driver>
           </TargetDlls>
         </DebugOption>
@@ -159,9 +170,14 @@
             <Capability>1</Capability>
             <DriverSelection>4099</DriverSelection>
           </Flash1>
+          <bUseTDR>1</bUseTDR>
           <Flash2>Segger\JL2CM3.dll</Flash2>
           <Flash3>"" ()</Flash3>
-          <Flash4 />
+          <Flash4></Flash4>
+          <pFcarmOut></pFcarmOut>
+          <pFcarmGrp></pFcarmGrp>
+          <pFcArmRoot></pFcArmRoot>
+          <FcArmLst>0</FcArmLst>
         </Utilities>
         <TargetArmAds>
           <ArmAdsMisc>
@@ -193,7 +209,7 @@
             <RvctClst>0</RvctClst>
             <GenPPlst>0</GenPPlst>
             <AdsCpuType>"Cortex-M3"</AdsCpuType>
-            <RvctDeviceName />
+            <RvctDeviceName></RvctDeviceName>
             <mOS>0</mOS>
             <uocRom>0</uocRom>
             <uocRam>0</uocRam>
@@ -324,7 +340,7 @@
                 <Size>0x8000</Size>
               </OCR_RVCT10>
             </OnChipMemories>
-            <RvctStartVector />
+            <RvctStartVector></RvctStartVector>
           </ArmAdsMisc>
           <Cads>
             <interw>1</interw>
@@ -339,11 +355,14 @@
             <Rwpi>0</Rwpi>
             <wLevel>0</wLevel>
             <uThumb>0</uThumb>
+            <uSurpInc>0</uSurpInc>
+            <uC99>0</uC99>
+            <useXO>0</useXO>
             <VariousControls>
-              <MiscControls />
-              <Define />
-              <Undefine />
-              <IncludePath>applications;.;drivers;CMSIS/CM3/CoreSupport;CMSIS/CM3/DeviceSupport/NXP/LPC177x_8x;../../include;../../libcpu/arm/cortex-m3;../../libcpu/arm/common;../../components/finsh</IncludePath>
+              <MiscControls></MiscControls>
+              <Define></Define>
+              <Undefine></Undefine>
+              <IncludePath>applications;.;drivers;CMSIS/CM3/CoreSupport;CMSIS/CM3/DeviceSupport/NXP/LPC177x_8x;../../include;../../libcpu/arm/cortex-m3;../../libcpu/arm/common;../../components/finsh;Libraries/include</IncludePath>
             </VariousControls>
           </Cads>
           <Aads>
@@ -354,11 +373,13 @@
             <SplitLS>0</SplitLS>
             <SwStkChk>0</SwStkChk>
             <NoWarn>0</NoWarn>
+            <uSurpInc>0</uSurpInc>
+            <useXO>0</useXO>
             <VariousControls>
-              <MiscControls />
-              <Define />
-              <Undefine />
-              <IncludePath />
+              <MiscControls></MiscControls>
+              <Define></Define>
+              <Undefine></Undefine>
+              <IncludePath></IncludePath>
             </VariousControls>
           </Aads>
           <LDads>
@@ -370,12 +391,13 @@
             <useFile>0</useFile>
             <TextAddressRange>0x00000000</TextAddressRange>
             <DataAddressRange>0x10000000</DataAddressRange>
-            <ScatterFile />
-            <IncludeLibs />
-            <IncludeLibsPath />
-            <Misc> --keep *.o(FSymTab) --keep *.o(VSymTab) </Misc>
-            <LinkerInputFile />
-            <DisabledWarnings />
+            <pXoBase></pXoBase>
+            <ScatterFile></ScatterFile>
+            <IncludeLibs></IncludeLibs>
+            <IncludeLibsPath></IncludeLibsPath>
+            <Misc>--keep *.o(FSymTab) --keep *.o(VSymTab)</Misc>
+            <LinkerInputFile></LinkerInputFile>
+            <DisabledWarnings></DisabledWarnings>
           </LDads>
         </TargetArmAds>
       </TargetOption>
@@ -388,12 +410,15 @@
               <FileType>1</FileType>
               <FilePath>applications/application.c</FilePath>
             </File>
-          </Files>
-          <Files>
             <File>
               <FileName>startup.c</FileName>
               <FileType>1</FileType>
               <FilePath>applications/startup.c</FilePath>
+            </File>
+            <File>
+              <FileName>rtconfig.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\rtconfig.h</FilePath>
             </File>
           </Files>
         </Group>
@@ -405,61 +430,63 @@
               <FileType>1</FileType>
               <FilePath>drivers/board.c</FilePath>
             </File>
-          </Files>
-          <Files>
-            <File>
-              <FileName>drv_glcd.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>drivers/drv_glcd.c</FilePath>
-            </File>
-          </Files>
-          <Files>
-            <File>
-              <FileName>lpc177x_8x_clkpwr.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>drivers/lpc177x_8x_clkpwr.c</FilePath>
-            </File>
-          </Files>
-          <Files>
-            <File>
-              <FileName>lpc177x_8x_emc.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>drivers/lpc177x_8x_emc.c</FilePath>
-            </File>
-          </Files>
-          <Files>
-            <File>
-              <FileName>lpc177x_8x_pinsel.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>drivers/lpc177x_8x_pinsel.c</FilePath>
-            </File>
-          </Files>
-          <Files>
-            <File>
-              <FileName>lpc177x_8x_uart.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>drivers/lpc177x_8x_uart.c</FilePath>
-            </File>
-          </Files>
-          <Files>
-            <File>
-              <FileName>lpc17xx_lcd.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>drivers/lpc17xx_lcd.c</FilePath>
-            </File>
-          </Files>
-          <Files>
             <File>
               <FileName>sdram.c</FileName>
               <FileType>1</FileType>
               <FilePath>drivers/sdram.c</FilePath>
             </File>
-          </Files>
-          <Files>
             <File>
               <FileName>uart.c</FileName>
               <FileType>1</FileType>
               <FilePath>drivers/uart.c</FilePath>
+              <FileOption>
+                <CommonProperty>
+                  <UseCPPCompiler>2</UseCPPCompiler>
+                  <RVCTCodeConst>0</RVCTCodeConst>
+                  <RVCTZI>0</RVCTZI>
+                  <RVCTOtherData>0</RVCTOtherData>
+                  <ModuleSelection>0</ModuleSelection>
+                  <IncludeInBuild>0</IncludeInBuild>
+                  <AlwaysBuild>0</AlwaysBuild>
+                  <GenerateAssemblyFile>2</GenerateAssemblyFile>
+                  <AssembleAssemblyFile>2</AssembleAssemblyFile>
+                  <PublicsOnly>2</PublicsOnly>
+                  <StopOnExitCode>11</StopOnExitCode>
+                  <CustomArgument></CustomArgument>
+                  <IncludeLibraryModules></IncludeLibraryModules>
+                  <ComprImg>1</ComprImg>
+                </CommonProperty>
+                <FileArmAds>
+                  <Cads>
+                    <interw>2</interw>
+                    <Optim>0</Optim>
+                    <oTime>2</oTime>
+                    <SplitLS>2</SplitLS>
+                    <OneElfS>2</OneElfS>
+                    <Strict>2</Strict>
+                    <EnumInt>2</EnumInt>
+                    <PlainCh>2</PlainCh>
+                    <Ropi>2</Ropi>
+                    <Rwpi>2</Rwpi>
+                    <wLevel>0</wLevel>
+                    <uThumb>2</uThumb>
+                    <uSurpInc>2</uSurpInc>
+                    <uC99>2</uC99>
+                    <useXO>2</useXO>
+                    <VariousControls>
+                      <MiscControls></MiscControls>
+                      <Define></Define>
+                      <Undefine></Undefine>
+                      <IncludePath></IncludePath>
+                    </VariousControls>
+                  </Cads>
+                </FileArmAds>
+              </FileOption>
+            </File>
+            <File>
+              <FileName>uart_int.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\drivers\uart_int.c</FilePath>
             </File>
           </Files>
         </Group>
@@ -471,15 +498,11 @@
               <FileType>1</FileType>
               <FilePath>CMSIS/CM3/CoreSupport/core_cm3.c</FilePath>
             </File>
-          </Files>
-          <Files>
             <File>
               <FileName>system_LPC177x_8x.c</FileName>
               <FileType>1</FileType>
               <FilePath>CMSIS/CM3/DeviceSupport/NXP/LPC177x_8x/system_LPC177x_8x.c</FilePath>
             </File>
-          </Files>
-          <Files>
             <File>
               <FileName>startup_LPC177x_8x.s</FileName>
               <FileType>2</FileType>
@@ -495,92 +518,66 @@
               <FileType>1</FileType>
               <FilePath>../../src/clock.c</FilePath>
             </File>
-          </Files>
-          <Files>
             <File>
               <FileName>components.c</FileName>
               <FileType>1</FileType>
               <FilePath>../../src/components.c</FilePath>
             </File>
-          </Files>
-          <Files>
             <File>
               <FileName>device.c</FileName>
               <FileType>1</FileType>
               <FilePath>../../src/device.c</FilePath>
             </File>
-          </Files>
-          <Files>
             <File>
               <FileName>idle.c</FileName>
               <FileType>1</FileType>
               <FilePath>../../src/idle.c</FilePath>
             </File>
-          </Files>
-          <Files>
             <File>
               <FileName>ipc.c</FileName>
               <FileType>1</FileType>
               <FilePath>../../src/ipc.c</FilePath>
             </File>
-          </Files>
-          <Files>
             <File>
               <FileName>irq.c</FileName>
               <FileType>1</FileType>
               <FilePath>../../src/irq.c</FilePath>
             </File>
-          </Files>
-          <Files>
             <File>
               <FileName>kservice.c</FileName>
               <FileType>1</FileType>
               <FilePath>../../src/kservice.c</FilePath>
             </File>
-          </Files>
-          <Files>
             <File>
               <FileName>mem.c</FileName>
               <FileType>1</FileType>
               <FilePath>../../src/mem.c</FilePath>
             </File>
-          </Files>
-          <Files>
             <File>
               <FileName>memheap.c</FileName>
               <FileType>1</FileType>
               <FilePath>../../src/memheap.c</FilePath>
             </File>
-          </Files>
-          <Files>
             <File>
               <FileName>mempool.c</FileName>
               <FileType>1</FileType>
               <FilePath>../../src/mempool.c</FilePath>
             </File>
-          </Files>
-          <Files>
             <File>
               <FileName>object.c</FileName>
               <FileType>1</FileType>
               <FilePath>../../src/object.c</FilePath>
             </File>
-          </Files>
-          <Files>
             <File>
               <FileName>scheduler.c</FileName>
               <FileType>1</FileType>
               <FilePath>../../src/scheduler.c</FilePath>
             </File>
-          </Files>
-          <Files>
             <File>
               <FileName>thread.c</FileName>
               <FileType>1</FileType>
               <FilePath>../../src/thread.c</FilePath>
             </File>
-          </Files>
-          <Files>
             <File>
               <FileName>timer.c</FileName>
               <FileType>1</FileType>
@@ -596,29 +593,21 @@
               <FileType>1</FileType>
               <FilePath>../../libcpu/arm/cortex-m3/cpuport.c</FilePath>
             </File>
-          </Files>
-          <Files>
             <File>
               <FileName>context_rvds.S</FileName>
               <FileType>2</FileType>
               <FilePath>../../libcpu/arm/cortex-m3/context_rvds.S</FilePath>
             </File>
-          </Files>
-          <Files>
             <File>
               <FileName>backtrace.c</FileName>
               <FileType>1</FileType>
               <FilePath>../../libcpu/arm/common/backtrace.c</FilePath>
             </File>
-          </Files>
-          <Files>
             <File>
               <FileName>div0.c</FileName>
               <FileType>1</FileType>
               <FilePath>../../libcpu/arm/common/div0.c</FilePath>
             </File>
-          </Files>
-          <Files>
             <File>
               <FileName>showmem.c</FileName>
               <FileType>1</FileType>
@@ -634,85 +623,61 @@
               <FileType>1</FileType>
               <FilePath>../../components/finsh/shell.c</FilePath>
             </File>
-          </Files>
-          <Files>
             <File>
               <FileName>symbol.c</FileName>
               <FileType>1</FileType>
               <FilePath>../../components/finsh/symbol.c</FilePath>
             </File>
-          </Files>
-          <Files>
             <File>
               <FileName>cmd.c</FileName>
               <FileType>1</FileType>
               <FilePath>../../components/finsh/cmd.c</FilePath>
             </File>
-          </Files>
-          <Files>
             <File>
               <FileName>finsh_compiler.c</FileName>
               <FileType>1</FileType>
               <FilePath>../../components/finsh/finsh_compiler.c</FilePath>
             </File>
-          </Files>
-          <Files>
             <File>
               <FileName>finsh_error.c</FileName>
               <FileType>1</FileType>
               <FilePath>../../components/finsh/finsh_error.c</FilePath>
             </File>
-          </Files>
-          <Files>
             <File>
               <FileName>finsh_heap.c</FileName>
               <FileType>1</FileType>
               <FilePath>../../components/finsh/finsh_heap.c</FilePath>
             </File>
-          </Files>
-          <Files>
             <File>
               <FileName>finsh_init.c</FileName>
               <FileType>1</FileType>
               <FilePath>../../components/finsh/finsh_init.c</FilePath>
             </File>
-          </Files>
-          <Files>
             <File>
               <FileName>finsh_node.c</FileName>
               <FileType>1</FileType>
               <FilePath>../../components/finsh/finsh_node.c</FilePath>
             </File>
-          </Files>
-          <Files>
             <File>
               <FileName>finsh_ops.c</FileName>
               <FileType>1</FileType>
               <FilePath>../../components/finsh/finsh_ops.c</FilePath>
             </File>
-          </Files>
-          <Files>
             <File>
               <FileName>finsh_parser.c</FileName>
               <FileType>1</FileType>
               <FilePath>../../components/finsh/finsh_parser.c</FilePath>
             </File>
-          </Files>
-          <Files>
             <File>
               <FileName>finsh_var.c</FileName>
               <FileType>1</FileType>
               <FilePath>../../components/finsh/finsh_var.c</FilePath>
             </File>
-          </Files>
-          <Files>
             <File>
               <FileName>finsh_vm.c</FileName>
               <FileType>1</FileType>
               <FilePath>../../components/finsh/finsh_vm.c</FilePath>
             </File>
-          </Files>
-          <Files>
             <File>
               <FileName>finsh_token.c</FileName>
               <FileType>1</FileType>
@@ -720,7 +685,335 @@
             </File>
           </Files>
         </Group>
+        <Group>
+          <GroupName>Libraries</GroupName>
+          <Files>
+            <File>
+              <FileName>debug_frmwrk.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\Libraries\source\debug_frmwrk.c</FilePath>
+            </File>
+            <File>
+              <FileName>lpc177x_8x_adc.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\Libraries\source\lpc177x_8x_adc.c</FilePath>
+            </File>
+            <File>
+              <FileName>lpc177x_8x_bod.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\Libraries\source\lpc177x_8x_bod.c</FilePath>
+            </File>
+            <File>
+              <FileName>lpc177x_8x_can.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\Libraries\source\lpc177x_8x_can.c</FilePath>
+            </File>
+            <File>
+              <FileName>lpc177x_8x_clkpwr.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\Libraries\source\lpc177x_8x_clkpwr.c</FilePath>
+            </File>
+            <File>
+              <FileName>lpc177x_8x_crc.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\Libraries\source\lpc177x_8x_crc.c</FilePath>
+              <FileOption>
+                <CommonProperty>
+                  <UseCPPCompiler>2</UseCPPCompiler>
+                  <RVCTCodeConst>0</RVCTCodeConst>
+                  <RVCTZI>0</RVCTZI>
+                  <RVCTOtherData>0</RVCTOtherData>
+                  <ModuleSelection>0</ModuleSelection>
+                  <IncludeInBuild>0</IncludeInBuild>
+                  <AlwaysBuild>0</AlwaysBuild>
+                  <GenerateAssemblyFile>2</GenerateAssemblyFile>
+                  <AssembleAssemblyFile>2</AssembleAssemblyFile>
+                  <PublicsOnly>2</PublicsOnly>
+                  <StopOnExitCode>11</StopOnExitCode>
+                  <CustomArgument></CustomArgument>
+                  <IncludeLibraryModules></IncludeLibraryModules>
+                  <ComprImg>1</ComprImg>
+                </CommonProperty>
+                <FileArmAds>
+                  <Cads>
+                    <interw>2</interw>
+                    <Optim>0</Optim>
+                    <oTime>2</oTime>
+                    <SplitLS>2</SplitLS>
+                    <OneElfS>2</OneElfS>
+                    <Strict>2</Strict>
+                    <EnumInt>2</EnumInt>
+                    <PlainCh>2</PlainCh>
+                    <Ropi>2</Ropi>
+                    <Rwpi>2</Rwpi>
+                    <wLevel>0</wLevel>
+                    <uThumb>2</uThumb>
+                    <uSurpInc>2</uSurpInc>
+                    <uC99>2</uC99>
+                    <useXO>2</useXO>
+                    <VariousControls>
+                      <MiscControls></MiscControls>
+                      <Define></Define>
+                      <Undefine></Undefine>
+                      <IncludePath></IncludePath>
+                    </VariousControls>
+                  </Cads>
+                </FileArmAds>
+              </FileOption>
+            </File>
+            <File>
+              <FileName>lpc177x_8x_dac.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\Libraries\source\lpc177x_8x_dac.c</FilePath>
+            </File>
+            <File>
+              <FileName>lpc177x_8x_eeprom.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\Libraries\source\lpc177x_8x_eeprom.c</FilePath>
+            </File>
+            <File>
+              <FileName>lpc177x_8x_emac.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\Libraries\source\lpc177x_8x_emac.c</FilePath>
+              <FileOption>
+                <CommonProperty>
+                  <UseCPPCompiler>2</UseCPPCompiler>
+                  <RVCTCodeConst>0</RVCTCodeConst>
+                  <RVCTZI>0</RVCTZI>
+                  <RVCTOtherData>0</RVCTOtherData>
+                  <ModuleSelection>0</ModuleSelection>
+                  <IncludeInBuild>0</IncludeInBuild>
+                  <AlwaysBuild>0</AlwaysBuild>
+                  <GenerateAssemblyFile>2</GenerateAssemblyFile>
+                  <AssembleAssemblyFile>2</AssembleAssemblyFile>
+                  <PublicsOnly>2</PublicsOnly>
+                  <StopOnExitCode>11</StopOnExitCode>
+                  <CustomArgument></CustomArgument>
+                  <IncludeLibraryModules></IncludeLibraryModules>
+                  <ComprImg>1</ComprImg>
+                </CommonProperty>
+                <FileArmAds>
+                  <Cads>
+                    <interw>2</interw>
+                    <Optim>0</Optim>
+                    <oTime>2</oTime>
+                    <SplitLS>2</SplitLS>
+                    <OneElfS>2</OneElfS>
+                    <Strict>2</Strict>
+                    <EnumInt>2</EnumInt>
+                    <PlainCh>2</PlainCh>
+                    <Ropi>2</Ropi>
+                    <Rwpi>2</Rwpi>
+                    <wLevel>0</wLevel>
+                    <uThumb>2</uThumb>
+                    <uSurpInc>2</uSurpInc>
+                    <uC99>2</uC99>
+                    <useXO>2</useXO>
+                    <VariousControls>
+                      <MiscControls></MiscControls>
+                      <Define></Define>
+                      <Undefine></Undefine>
+                      <IncludePath></IncludePath>
+                    </VariousControls>
+                  </Cads>
+                </FileArmAds>
+              </FileOption>
+            </File>
+            <File>
+              <FileName>lpc177x_8x_emc.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\Libraries\source\lpc177x_8x_emc.c</FilePath>
+            </File>
+            <File>
+              <FileName>lpc177x_8x_exti.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\Libraries\source\lpc177x_8x_exti.c</FilePath>
+            </File>
+            <File>
+              <FileName>lpc177x_8x_gpdma.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\Libraries\source\lpc177x_8x_gpdma.c</FilePath>
+            </File>
+            <File>
+              <FileName>lpc177x_8x_gpio.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\Libraries\source\lpc177x_8x_gpio.c</FilePath>
+            </File>
+            <File>
+              <FileName>lpc177x_8x_i2c.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\Libraries\source\lpc177x_8x_i2c.c</FilePath>
+            </File>
+            <File>
+              <FileName>lpc177x_8x_i2s.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\Libraries\source\lpc177x_8x_i2s.c</FilePath>
+            </File>
+            <File>
+              <FileName>lpc177x_8x_iap.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\Libraries\source\lpc177x_8x_iap.c</FilePath>
+            </File>
+            <File>
+              <FileName>lpc177x_8x_lcd.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\Libraries\source\lpc177x_8x_lcd.c</FilePath>
+              <FileOption>
+                <CommonProperty>
+                  <UseCPPCompiler>2</UseCPPCompiler>
+                  <RVCTCodeConst>0</RVCTCodeConst>
+                  <RVCTZI>0</RVCTZI>
+                  <RVCTOtherData>0</RVCTOtherData>
+                  <ModuleSelection>0</ModuleSelection>
+                  <IncludeInBuild>0</IncludeInBuild>
+                  <AlwaysBuild>0</AlwaysBuild>
+                  <GenerateAssemblyFile>2</GenerateAssemblyFile>
+                  <AssembleAssemblyFile>2</AssembleAssemblyFile>
+                  <PublicsOnly>2</PublicsOnly>
+                  <StopOnExitCode>11</StopOnExitCode>
+                  <CustomArgument></CustomArgument>
+                  <IncludeLibraryModules></IncludeLibraryModules>
+                  <ComprImg>1</ComprImg>
+                </CommonProperty>
+                <FileArmAds>
+                  <Cads>
+                    <interw>2</interw>
+                    <Optim>0</Optim>
+                    <oTime>2</oTime>
+                    <SplitLS>2</SplitLS>
+                    <OneElfS>2</OneElfS>
+                    <Strict>2</Strict>
+                    <EnumInt>2</EnumInt>
+                    <PlainCh>2</PlainCh>
+                    <Ropi>2</Ropi>
+                    <Rwpi>2</Rwpi>
+                    <wLevel>0</wLevel>
+                    <uThumb>2</uThumb>
+                    <uSurpInc>2</uSurpInc>
+                    <uC99>2</uC99>
+                    <useXO>2</useXO>
+                    <VariousControls>
+                      <MiscControls></MiscControls>
+                      <Define></Define>
+                      <Undefine></Undefine>
+                      <IncludePath></IncludePath>
+                    </VariousControls>
+                  </Cads>
+                </FileArmAds>
+              </FileOption>
+            </File>
+            <File>
+              <FileName>lpc177x_8x_mci.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\Libraries\source\lpc177x_8x_mci.c</FilePath>
+              <FileOption>
+                <CommonProperty>
+                  <UseCPPCompiler>2</UseCPPCompiler>
+                  <RVCTCodeConst>0</RVCTCodeConst>
+                  <RVCTZI>0</RVCTZI>
+                  <RVCTOtherData>0</RVCTOtherData>
+                  <ModuleSelection>0</ModuleSelection>
+                  <IncludeInBuild>0</IncludeInBuild>
+                  <AlwaysBuild>0</AlwaysBuild>
+                  <GenerateAssemblyFile>2</GenerateAssemblyFile>
+                  <AssembleAssemblyFile>2</AssembleAssemblyFile>
+                  <PublicsOnly>2</PublicsOnly>
+                  <StopOnExitCode>11</StopOnExitCode>
+                  <CustomArgument></CustomArgument>
+                  <IncludeLibraryModules></IncludeLibraryModules>
+                  <ComprImg>1</ComprImg>
+                </CommonProperty>
+                <FileArmAds>
+                  <Cads>
+                    <interw>2</interw>
+                    <Optim>0</Optim>
+                    <oTime>2</oTime>
+                    <SplitLS>2</SplitLS>
+                    <OneElfS>2</OneElfS>
+                    <Strict>2</Strict>
+                    <EnumInt>2</EnumInt>
+                    <PlainCh>2</PlainCh>
+                    <Ropi>2</Ropi>
+                    <Rwpi>2</Rwpi>
+                    <wLevel>0</wLevel>
+                    <uThumb>2</uThumb>
+                    <uSurpInc>2</uSurpInc>
+                    <uC99>2</uC99>
+                    <useXO>2</useXO>
+                    <VariousControls>
+                      <MiscControls></MiscControls>
+                      <Define></Define>
+                      <Undefine></Undefine>
+                      <IncludePath></IncludePath>
+                    </VariousControls>
+                  </Cads>
+                </FileArmAds>
+              </FileOption>
+            </File>
+            <File>
+              <FileName>lpc177x_8x_mcpwm.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\Libraries\source\lpc177x_8x_mcpwm.c</FilePath>
+            </File>
+            <File>
+              <FileName>lpc177x_8x_nvic.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\Libraries\source\lpc177x_8x_nvic.c</FilePath>
+            </File>
+            <File>
+              <FileName>lpc177x_8x_pinsel.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\Libraries\source\lpc177x_8x_pinsel.c</FilePath>
+            </File>
+            <File>
+              <FileName>lpc177x_8x_pwm.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\Libraries\source\lpc177x_8x_pwm.c</FilePath>
+            </File>
+            <File>
+              <FileName>lpc177x_8x_qei.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\Libraries\source\lpc177x_8x_qei.c</FilePath>
+            </File>
+            <File>
+              <FileName>lpc177x_8x_rtc.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\Libraries\source\lpc177x_8x_rtc.c</FilePath>
+            </File>
+            <File>
+              <FileName>lpc177x_8x_ssp.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\Libraries\source\lpc177x_8x_ssp.c</FilePath>
+            </File>
+            <File>
+              <FileName>lpc177x_8x_systick.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\Libraries\source\lpc177x_8x_systick.c</FilePath>
+            </File>
+            <File>
+              <FileName>lpc177x_8x_timer.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\Libraries\source\lpc177x_8x_timer.c</FilePath>
+            </File>
+            <File>
+              <FileName>lpc177x_8x_uart.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\Libraries\source\lpc177x_8x_uart.c</FilePath>
+            </File>
+            <File>
+              <FileName>lpc177x_8x_usbhost.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\Libraries\source\lpc177x_8x_usbhost.c</FilePath>
+            </File>
+            <File>
+              <FileName>lpc177x_8x_wwdt.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\Libraries\source\lpc177x_8x_wwdt.c</FilePath>
+            </File>
+          </Files>
+        </Group>
       </Groups>
     </Target>
   </Targets>
+
 </Project>
