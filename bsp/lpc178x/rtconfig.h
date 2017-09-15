@@ -15,7 +15,7 @@
 // </integer>
 #define RT_THREAD_PRIORITY_MAX	32
 // <integer name="RT_TICK_PER_SECOND" description="OS tick per second" default="100" />
-#define RT_TICK_PER_SECOND	100
+#define RT_TICK_PER_SECOND	1000
 // <section name="RT_DEBUG" description="Kernel Debug Configuration" default="true" >
 #define RT_DEBUG
 // <bool name="RT_THREAD_DEBUG" description="Thread debug enable" default="false" />
@@ -202,5 +202,7 @@
 // </section>
 
 // </RDTConfigurator>
+#define RT_USING_EMWIN
+
 
 #endif

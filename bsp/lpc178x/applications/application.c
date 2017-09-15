@@ -31,6 +31,15 @@
 #include <netif/ethernetif.h>
 #endif
 
+#ifdef RT_USING_EMWIN
+//#include "lcd.h"
+#define LCD_THREAD_STACK_SIZE	(1024 * 6)
+#define RT_LCD_THREAD_PRIORITY	28
+static struct rt_thread lcd_thread;
+ALIGN(RT_ALIGN_SIZE)
+static rt_uint8_t rt_lcd_thread_stack[LCD_THREAD_STACK_SIZE];
+#endif
+
 #ifdef RT_USING_RTGUI
 #include <rtgui/driver.h>
 #endif
@@ -69,6 +78,23 @@ void rt_init_thread_entry(void *parameter)
         /* init lwip system */
         lwip_sys_init();
         rt_kprintf("TCP/IP initialized!\n");
+    }
+#endif
+
+#ifdef RT_USING_EMWIN
+    {
+	    extern void MainTask(void);
+
+	    //rt_hw_lcd_init();
+		/* initialize thread */
+    	rt_thread_init(&lcd_thread,
+			"tlcd",
+			MainTask, RT_NULL,
+			&rt_lcd_thread_stack[0], sizeof(rt_lcd_thread_stack),
+			RT_LCD_THREAD_PRIORITY, 20);
+
+		/* startup */
+		rt_thread_startup(&lcd_thread);
     }
 #endif
 

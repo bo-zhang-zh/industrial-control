@@ -1,0 +1,7 @@
+JLinkLog.txt
+*uvgui*
+*.dep
+*.bak
+obj/
+*.uvopt
+!emWin/GUI/Library/emWin_522_Keil460_M3_LE.lib

@@ -5,9 +5,6 @@
 #include "lpc177x_8x_pinsel.h"
 #include "sdram.h"
 
-//LPC_EMC_TypeDef	* const g_pEMC = ((LPC_EMC_TypeDef*) LPC_EMC_BASE);
-//LPC_IOCON_TypeDef	* const LPC_IOCON = ((LPC_IOCON_TypeDef*) LPC_IOCON_BASE);
-#define SDRAM_BASE               0xA0000000	   /* CS0 */
 #define EMC_NS2CLK(ns, nsPerClk)	((ns + nsPerClk - 1) / nsPerClk)
 
 static void delayMs(int a,int b)
@@ -15,70 +12,6 @@ static void delayMs(int a,int b)
     volatile unsigned int i;
     for(i=0;i<10000;i++);
 }
-
-/*****************************************************************************
-** Function name:		delayMs
-**
-** Descriptions:		Start the timer delay in milo seconds
-**						until elapsed
-**
-** parameters:			timer number, Delay value in milo second
-**
-** Returned value:		None
-**
-*****************************************************************************/
-//void delayMs(uint8_t timer_num, uint32_t delayInMs)
-//{
-//  if ( timer_num == 0 )
-//  {
-//	LPC_TIM0->TCR = 0x02;		/* reset timer */
-//	LPC_TIM0->PR  = 0x00;		/* set prescaler to zero */
-//	LPC_TIM0->MR0 = delayInMs * (PeripheralClock / 1000 - 1);
-//	LPC_TIM0->IR  = 0xff;		/* reset all interrrupts */
-//	LPC_TIM0->MCR = 0x04;		/* stop timer on match */
-//	LPC_TIM0->TCR = 0x01;		/* start timer */
-//
-//	/* wait until delay time has elapsed */
-//	while (LPC_TIM0->TCR & 0x01);
-//  }
-//  else if ( timer_num == 1 )
-//  {
-//	LPC_TIM1->TCR = 0x02;		/* reset timer */
-//	LPC_TIM1->PR  = 0x00;		/* set prescaler to zero */
-//	LPC_TIM1->MR0 = delayInMs * (PeripheralClock / 1000 - 1);
-//	LPC_TIM1->IR  = 0xff;		/* reset all interrrupts */
-//	LPC_TIM1->MCR = 0x04;		/* stop timer on match */
-//	LPC_TIM1->TCR = 0x01;		/* start timer */
-//
-//	/* wait until delay time has elapsed */
-//	while (LPC_TIM1->TCR & 0x01);
-//  }
-//  else if ( timer_num == 2 )
-//  {
-//	LPC_TIM2->TCR = 0x02;		/* reset timer */
-//	LPC_TIM2->PR  = 0x00;		/* set prescaler to zero */
-//	LPC_TIM2->MR0 = delayInMs * (PeripheralClock / 1000 - 1);
-//	LPC_TIM2->IR  = 0xff;		/* reset all interrrupts */
-//	LPC_TIM2->MCR = 0x04;		/* stop timer on match */
-//	LPC_TIM2->TCR = 0x01;		/* start timer */
-//
-//	/* wait until delay time has elapsed */
-//	while (LPC_TIM2->TCR & 0x01);
-//  }
-//  else if ( timer_num == 3 )
-//  {
-//	LPC_TIM3->TCR = 0x02;		/* reset timer */
-//	LPC_TIM3->PR  = 0x00;		/* set prescaler to zero */
-//	LPC_TIM3->MR0 = delayInMs * (PeripheralClock / 1000 - 1);
-//	LPC_TIM3->IR  = 0xff;		/* reset all interrrupts */
-//	LPC_TIM3->MCR = 0x04;		/* stop timer on match */
-//	LPC_TIM3->TCR = 0x01;		/* start timer */
-//
-//	/* wait until delay time has elapsed */
-//	while (LPC_TIM3->TCR & 0x01);
-//  }
-//  return;
-//}
 
 static void EMC_GPIO_Init (void)
 {
@@ -186,9 +119,9 @@ void SDRAM_Init (void)
     LPC_EMC->DynamicControl    = 0x00000083; /* Issue MODE command */
 
 #ifdef SDRAM_CONFIG_16BIT
-    wtemp = *((volatile uint16_t *)(SDRAM_BASE | (0x33<<12))); /* 8 burst, 3 CAS latency */
+    wtemp = *((volatile uint16_t *)(SDRAM_BASE_ADDR | (0x33<<12))); /* 8 burst, 3 CAS latency */
 #elif defined SDRAM_CONFIG_32BIT
-    dwtemp = *((volatile uint32_t *)(SDRAM_BASE | (0x32<<13)));	/* 4 burst, 3 CAS latency */
+    dwtemp = *((volatile uint32_t *)(SDRAM_BASE_ADDR | (0x32<<13)));	/* 4 burst, 3 CAS latency */
 #endif
 
     LPC_EMC->DynamicControl    = 0x00000000; /* Issue NORMAL command */
