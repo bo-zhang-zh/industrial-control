@@ -4,4 +4,4 @@ JLinkLog.txt
 *.bak
 obj/
 *.uvopt
-!emWin/GUI/Library/emWin_522_Keil460_M3_LE.lib
+!emWin/GUI/Library/*

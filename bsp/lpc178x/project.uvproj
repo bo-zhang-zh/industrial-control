@@ -1496,9 +1496,9 @@
               <FilePath>.\emWin\GUI\Include\WM_Intern.h</FilePath>
             </File>
             <File>
-              <FileName>emWin_522_Keil460_M3_LE.lib</FileName>
+              <FileName>emWin_M3_d5.lib</FileName>
               <FileType>4</FileType>
-              <FilePath>.\emWin\GUI\Library\emWin_522_Keil460_M3_LE.lib</FilePath>
+              <FilePath>.\emWin\GUI\Library\emWin_M3_d5.lib</FilePath>
             </File>
           </Files>
         </Group>
