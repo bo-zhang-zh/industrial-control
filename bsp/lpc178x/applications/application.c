@@ -40,6 +40,22 @@ ALIGN(RT_ALIGN_SIZE)
 static rt_uint8_t rt_lcd_thread_stack[LCD_THREAD_STACK_SIZE];
 #endif
 
+#ifdef RT_USING_CAN
+extern void can_recv_thread(void* parameter);
+extern void can_send_thread(void *parameter);
+#define CANRX_THREAD_STACK_SIZE	(512)
+#define CANTX_THREAD_STACK_SIZE	(512)
+#define RT_CANRX_THREAD_PRIORITY	17
+//这里发送的优先级需要比接收的优先级高，因为接收线程初始化会发送数据，需要发送线程完成初始化准备好
+#define RT_CANTX_THREAD_PRIORITY	16
+static struct rt_thread canrx_thread;
+static struct rt_thread cantx_thread;
+ALIGN(RT_ALIGN_SIZE)
+static rt_uint8_t rt_canrx_thread_stack[CANRX_THREAD_STACK_SIZE];
+ALIGN(RT_ALIGN_SIZE)
+static rt_uint8_t rt_cantx_thread_stack[CANTX_THREAD_STACK_SIZE];
+#endif
+
 #ifdef RT_USING_RTGUI
 #include <rtgui/driver.h>
 #endif
@@ -98,6 +114,30 @@ void rt_init_thread_entry(void *parameter)
     }
 #endif
 
+#ifdef RT_USING_CAN
+    {
+			/* initialize thread */
+    	rt_thread_init(&cantx_thread,
+			"cantx",
+			can_send_thread, RT_NULL,
+			&rt_cantx_thread_stack[0], sizeof(rt_cantx_thread_stack),
+			RT_CANTX_THREAD_PRIORITY, 10);
+
+		  /* startup */
+		  rt_thread_startup(&cantx_thread);		
+			
+			/* initialize thread */
+    	rt_thread_init(&canrx_thread,
+			"canrx",
+			can_recv_thread, RT_NULL,
+			&rt_canrx_thread_stack[0], sizeof(rt_canrx_thread_stack),
+			RT_CANRX_THREAD_PRIORITY, 10);
+
+		  /* startup */
+		  rt_thread_startup(&canrx_thread);
+    }
+#endif
+    
 #ifdef RT_USING_RTGUI
     {
     	extern void rtgui_system_server_init(void);
